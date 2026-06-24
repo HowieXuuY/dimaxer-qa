@@ -1,152 +1,6 @@
 {
   "version": 1,
   "paths": [
-  {
-  "alias": "post.multislice.input_number",
-  "ref": "//MultiPlane##CustomStatePlugin/**/Number/$$0/##v",
-  "owner": "PostTests",
-  "tags": [
-    "multislice"
-  ],
-  "notes": "MultiPlane Settings 内 Number 输入框；/**/ 跳过 MultiPlaneSettings_* hash。"
-},
-  {
-  "alias": "post.slice.show_preview",
-  "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Show Preview",
-  "owner": "PostTests",
-  "tags": [
-    "slice"
-  ],
-  "notes": "Slice 面板 Plane Parameters 内 Show Preview。"
-},
-  {
-  "alias": "post.multiplane.show_preview",
-  "ref": "//MultiPlane##CustomStatePlugin\\/##MultiPlaneSettings_31FB93CD/Show Preview",
-  "owner": "PostTests",
-  "tags": [
-    "multiplane"
-  ],
-  "notes": "MultiPlane 面板 MultiPlaneSettings 内 Show Preview。"
-},
-  {
-  "alias": "post.xyplot.plot_setting",
-  "ref": "//XYPlot##CustomStatePlugin/ContentTable/Plot Setting",
-  "owner": "PostTests",
-  "tags": [
-    "xyplot"
-  ],
-  "notes": "XYPlot ContentTable 内 Plot Setting 折叠区标题。"
-},
-  {
-  "alias": "post.xyplot.plugin_window",
-  "ref": "//XYPlot##CustomStatePlugin",
-  "owner": "PostTests",
-  "tags": [
-    "xyplot",
-    "plugin"
-  ]
-},
-  {
-  "alias": "post.xyplot.attr_check_0",
-  "ref": "//XYPlot##CustomStatePlugin/**/##AttrInfoTable/$$0/##CheckAttr",
-  "owner": "PostTests",
-  "tags": [
-    "xyplot"
-  ],
-  "notes": "XYPlot 属性列表第 1 行 CheckAttr；ID Stack copy path 的 /0/ 在测试路径中写作 $$0。"
-},
-  {
-  "alias": "post.xyplot.setting_table_r2_c1",
-  "ref": "//XYPlot##CustomStatePlugin/**/##SettingTable/$$2/$$1",
-  "owner": "PostTests",
-  "tags": [
-    "xyplot"
-  ],
-  "notes": "XYPlot SettingTable 第 3 行第 2 列；ID Stack copy path 的 /2/1 在测试路径中写作 $$2/$$1。"
-},
-  {
-  "alias": "post.ribbon.mesh_table_fft1",
-  "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_4_TableFFT1",
-  "owner": "PostTests",
-  "tags": [
-    "ribbon",
-    "fft"
-  ],
-  "notes": "CSV/FFT 导入后的 TableFFT1 场景树选择按钮；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
-},
-  {
-  "alias": "post.ribbon.vis_table_fft1",
-  "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_TableFFT1",
-  "owner": "PostTests",
-  "tags": [
-    "ribbon",
-    "fft"
-  ],
-  "notes": "CSV/FFT 导入后的 TableFFT1 可见性勾选框；##VisibilityCheckbox 前序号随场景树变化，失败时用 ID Stack 更新。"
-},
-  {
-  "alias": "post.ribbon.mesh_select_fft_test_random_signal",
-  "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_fft_test_random_signal",
-  "owner": "PostTests",
-  "tags": [
-    "ribbon",
-    "mesh",
-    "fft"
-  ],
-  "notes": "CSV 导入后的 fft_test_random_signal 节点；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
-},
-  {
-  "alias": "post.fft.apply",
-  "ref": "//FFT##CustomStatePlugin/ContentTable/Apply",
-  "owner": "PostTests",
-  "tags": [
-    "fft"
-  ]
-},
-  {
-  "alias": "post.popup.colormap_editor.table_button",
-  "ref": "//##Popup_e053fed4/##ColorMapEditerTable/$$0/$$1/...##button",
-  "owner": "Postbug",
-  "tags": [
-    "popup",
-    "colormap",
-    "button"
-  ],
-  "notes": "Popup 弹窗中 ColorMapEditerTable 表格第 0 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
-},
-  {
-  "alias": "post.ribbonscene.meshes.visibility_checkbox_volume",
-  "ref": "//RibbonScene\/**/##VisibilityCheckbox4_vol",
-  "owner": "Postbug",
-  "tags": [
-    "ribbonscene",
-    "meshes",
-    "volume",
-    "visibility"
-  ],
-  "notes": "RibbonScene 中 Meshes 面板的 Volume 可见性勾选框；定位路径为 Meshes_8900099D 下的 ##VisibilityCheckbox4_vol。"
-},
-  {
-  "alias": "post.ribbonscene.scene_properties.table_button",
-  "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/...##button",
-  "owner": "Postbug",
-  "tags": [
-    "ribbonscene",
-    "scene_properties",
-    "button"
-  ],
-  "notes": "RibbonScene 中 Scene Properties 面板 table1 表格第 2 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
-},
-    {
-  "alias": "post.quickaccess.show_by_volume",
-  "ref": "//QuickAccess/**/##wholeChildBtnShow By Volume",
-  "owner": "Postbug",
-  "tags": [
-    "quickaccess",
-    "volume"
-  ],
-  "notes": "QuickAccess Show By Volume 按钮；使用 /**/ 跳过 ##childGroupShow By Volume_* 哈希。"
-    },
     {
       "alias": "post.case_loader.apply",
       "ref": "//Dimaxer Case Loader/Apply",
@@ -342,7 +196,7 @@
       "notes": "时间点 0.00049999（animationCombo 下拉项）。"
     },
     {
-      "alias": "post.ribbon.mesh_select_vki59_vol_k2_1",
+      "alias": "post.ribbon.mesh_select_vki59",
       "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_5_VKI59_vol_K2_1",
       "owner": "Postbug",
       "tags": [
@@ -459,46 +313,6 @@
       "tags": [
         "ribbon",
         "mesh"
-      ]
-    },
-    {
-      "alias": "post.ribbon.mesh_select_vki59_vol_k2",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_VKI59_vol_K2",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "mesh",
-        "vtu"
-      ],
-      "notes": "VKI59 VTU 导入后的场景树网格节点；##SelectBtn 序号随树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.ribbon.vis_vki59",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_vol",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "mesh",
-        "vtu"
-      ],
-      "notes": "dmh 模型导入后的 Volume 可见性勾选框；##VisibilityCheckbox 序号随树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.ribbon.vis_fft_random_signal",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox3_fft_test_random_signal",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "fft"
-      ],
-      "notes": "FFT CSV 导入后的 fft_test_random_signal 可见性勾选框；##VisibilityCheckbox 序号随树变化。"
-    },
-    {
-      "alias": "post.resample.apply",
-      "ref": "//Resample##CustomStatePlugin/ContentTable/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "resample"
       ]
     },
     {
@@ -660,15 +474,6 @@
     {
       "alias": "post.renderview1",
       "ref": "//RenderView1",
-      "owner": "PostTests",
-      "tags": [
-        "viewport",
-        "capture"
-      ]
-    },
-    {
-      "alias": "post.renderview2",
-      "ref": "//RenderView2",
       "owner": "PostTests",
       "tags": [
         "viewport",
@@ -2128,25 +1933,6 @@
       ]
     },
     {
-      "alias": "post.reports.option",
-      "ref": "//Reports##CustomStatePlugin/**/Option",
-      "owner": "Postbug",
-      "tags": [
-        "reports"
-      ],
-      "notes": "Report Setting 内 Option 下拉；/**/ 跳过 ##ReportSetting_* 哈希。"
-    },
-    {
-      "alias": "post.reports.option_maximum",
-      "ref": "//##Combo_00/Option1/Maximum",
-      "owner": "Postbug",
-      "tags": [
-        "reports",
-        "combo"
-      ],
-      "notes": "Option 下拉弹出项 Maximum；Option1 为 Combo PushID。"
-    },
-    {
       "alias": "post.reports.exit",
       "ref": "//Reports##CustomStatePlugin/ContentTable/Exit",
       "owner": "PostTests",
@@ -2214,15 +2000,6 @@
       "tags": [
         "calculator"
       ]
-    },
-    {
-      "alias": "post.calculator.function_edit",
-      "ref": "//Calculator##CustomStatePlugin\\/##Function Parameters_9252B66A\\/##Text Editor_C493B56F\\/TextEditor_B2E5042A/#SCROLLX",
-      "owner": "Postbug",
-      "tags": [
-        "calculator"
-      ],
-      "notes": "Function Parameters 内的文本编辑器（全路径含 SCROLLX；哈希变化时用 ID Stack 更新）。"
     },
     {
       "alias": "post.ribbon.mesh_calc_result",
@@ -2411,6 +2188,14 @@
       ]
     },
     {
+      "alias": "post.multislice.input_number",
+      "ref": "//MultiPlane##CustomStatePlugin\\/##MultiPlaneSettings_31FB93CD/Number/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "multislice"
+      ]
+    },
+    {
       "alias": "post.multislice.input_offset",
       "ref": "//MultiPlane##CustomStatePlugin\\/##OffSet_0B6CDFD8/OffSet/$$0/##v",
       "owner": "PostTests",
@@ -2589,6 +2374,14 @@
     {
       "alias": "post.slice.combo_type",
       "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Type",
+      "owner": "PostTests",
+      "tags": [
+        "slice"
+      ]
+    },
+    {
+      "alias": "post.slice.show_preview",
+      "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Show Preview",
       "owner": "PostTests",
       "tags": [
         "slice"
@@ -3092,26 +2885,6 @@
       "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
     },
     {
-      "alias": "post.quickaccess.forward",
-      "ref": "//QuickAccess\\/##childGroupForward_D17E3F27/##wholeChildBtnForward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "animation"
-      ],
-      "notes": "动画前进按钮；##childGroupForward 哈希随 DPI 变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.quickaccess.backward",
-      "ref": "//QuickAccess\\/##childGroupBackward_7ECA1189/##wholeChildBtnBackward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "animation"
-      ],
-      "notes": "动画后退按钮；##childGroupBackward 哈希随 DPI 变化，失败时用 ID Stack 更新。"
-    },
-    {
       "alias": "post.link_camera.link",
       "ref": "//Link Camera##CustomStatePlugin/ContentTable/Link",
       "owner": "PostTests",
@@ -3217,24 +2990,6 @@
       ]
     },
     {
-      "alias": "post.scene_tree.vis_multiplane1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox19_MultiPlane1",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "multiplane"
-      ]
-    },
-    {
-      "alias": "post.scene_tree.vis_multiplane9",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_MultiPlane1",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "multiplane"
-      ]
-    },
-    {
       "alias": "post.scene_tree.vis_bcid_11",
       "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox6_bcid_11",
       "owner": "Postbug",
@@ -3261,6 +3016,28 @@
         "properties"
       ],
       "notes": "Scene Properties 表第 3 行 Colormap Range Auto 按钮。"
+    },
+    {
+      "alias": "post.scene_properties.value_range_min",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/##Min",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties",
+        "value_range"
+      ],
+      "notes": "Scene Properties 表 Value Range 的 Min 输入框。"
+    },
+    {
+      "alias": "post.scene_properties.value_range_max",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/##Max",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties",
+        "value_range"
+      ],
+      "notes": "Scene Properties 表 Value Range 的 Max 输入框。"
     },
     {
       "alias": "post.scene_properties.density",
@@ -3360,55 +3137,6 @@
         "tabs"
       ],
       "notes": "配合 ui.tab_close 关闭指定 Scene 页签。"
-    },
-    {
-      "alias": "post.ribbon.mesh_streamtracer1_vki59",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_4_StreamTracer1",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "streamline"
-      ],
-      "notes": "VKI59 StreamTracer apply 后场景树节点；##SelectBtn 序号随树变化。"
-    },
-    {
-      "alias": "post.stream_line.combo_seeds_pointsource",
-      "ref": "//##Combo_00/Seeds1/PointSource",
-      "owner": "Postbug",
-      "tags": [
-        "streamline",
-        "combo"
-      ],
-      "notes": "Seeds 下拉弹出项 PointSource；Seeds1 为 Combo PushID，失败时用 snapshot 更新。"
-    },
-    {
-      "alias": "post.stream_line.combo_seeds_cylinderpointsource",
-      "ref": "//##Combo_00/Seeds1/CylinderPointSource",
-      "owner": "Postbug",
-      "tags": [
-        "streamline",
-        "combo"
-      ],
-      "notes": "Seeds 下拉弹出项 CylinderPointSource；Seeds1 为 Combo PushID，失败时用 snapshot 更新。"
-    },
-    {
-      "alias": "post.stream_line.combo_seeds_highreslinesource",
-      "ref": "//##Combo_00/Seeds2/HighResLineSource",
-      "owner": "Postbug",
-      "tags": [
-        "streamline",
-        "combo"
-      ],
-      "notes": "Seeds 下拉弹出项 High Res Line Source；Seeds1 为 Combo PushID，失败时用 snapshot 更新。"
-    },
-    {
-      "alias": "post.particle_tracer.show_cylinder",
-      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/##ParticleTable/$$-1/$$1/##ShowCylinder",
-      "owner": "Postbug",
-      "tags": [
-        "particle_tracer"
-      ],
-      "notes": "Particle Tracer ParticleTable 最后一行第2列 ShowCylinder 控件。"
     }
   ]
 }
