@@ -1,7 +1,6 @@
 {
   "version": 1,
   "paths": [
-<<<<<<< HEAD
     {
       "alias": "post.multislice.input_number",
       "ref": "//MultiPlane##CustomStatePlugin/**/Number/$$0/##v",
@@ -148,8 +147,6 @@
       ],
       "notes": "QuickAccess Show By Volume 按钮；使用 /**/ 跳过 ##childGroupShow By Volume_* 哈希。"
     },
-=======
->>>>>>> b06317dacd998081e68d5a8ad09cc53beabec8e5
     {
       "alias": "post.case_loader.apply",
       "ref": "//Dimaxer Case Loader/Apply",
