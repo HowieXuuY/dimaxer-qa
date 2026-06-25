@@ -2,6 +2,208 @@
   "version": 1,
   "paths": [
     {
+      "alias": "post.adjust_views.add",
+      "ref": "//AdjustViews##CustomStatePlugin/ContentTable/Add",
+      "owner": "Postbug",
+      "tags": [
+        "adjust_views"
+      ]
+    },
+    {
+      "alias": "post.adjust_views.clear_all",
+      "ref": "//AdjustViews##CustomStatePlugin/ContentTable/Clear All",
+      "owner": "Postbug",
+      "tags": [
+        "adjust_views"
+      ]
+    },
+    {
+      "alias": "post.adjust_views.name_1",
+      "ref": "//AdjustViews##CustomStatePlugin/**/$$1/##Name1",
+      "owner": "Postbug",
+      "tags": [
+        "adjust_views"
+      ],
+      "notes": "CameraListView 第 1 行 View Point Name（PushID 1 + ##Name1）；Add 后新视点行号与已有行数一致时用此 alias。"
+    },
+    {
+      "alias": "post.adjust_views.plugin_close",
+      "ref": "//AdjustViews##CustomStatePlugin/",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "adjust_views",
+        "plugin"
+      ],
+      "notes": "Plugin title-bar close (same pattern as post.xyplot.plugin_close)."
+    },
+    {
+      "alias": "post.annotation.apply",
+      "ref": "//Annotation##CustomStatePlugin/ContentTable/Apply",
+      "owner": "Postbug",
+      "tags": [
+        "annotation"
+      ],
+      "notes": "通常无 Process Model 进度条；脚本用 item_click，不用 item_click_apply。"
+    },
+    {
+      "alias": "post.axes_grid.close",
+      "ref": "//Data Axes Grid Edit/#CLOSE",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ]
+    },
+    {
+      "alias": "post.axes_grid.modal",
+      "ref": "//Data Axes Grid Edit",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "弹窗根窗口；NoScrollbar 时仍可用 scroll_to_bottom 滚到 Apply/Reset/Close。"
+    },
+    {
+      "alias": "post.axes_grid.reset",
+      "ref": "//Data Axes Grid Edit/Reset",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "弹窗底部 Reset（非 Bounds 区内小 Reset）。"
+    },
+    {
+      "alias": "post.axes_grid.x_edit_0",
+      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2\\/##Child1##m_Axeseditor1_6B1D83B5/####m_Axeseditor1/$$0/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "X 轴列表区 Child1 第 0 行 InputFloat（ID Stack: .../$$0/##edit）。"
+    },
+    {
+      "alias": "post.axes_grid.x_edit_1",
+      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2\\/##Child1##m_Axeseditor1_6B1D83B5/####m_Axeseditor1/$$1/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "X 轴列表区 Child1 第 1 行 InputFloat。"
+    },
+    {
+      "alias": "post.axes_grid.x_plus",
+      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2\\/##Child2##m_Axeseditor1_78E5E346/+",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ]
+    },
+    {
+      "alias": "post.axes_grid.x_use_custom_bounds",
+      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2/X Axis Use Custom Bounds",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ]
+    },
+    {
+      "alias": "post.axes_grid.y_edit_0",
+      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA\\/##Child1##m_Axeseditor2_20AF80AA/####m_Axeseditor2/$$0/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "Y 轴列表区 Child1 第 0 行 InputFloat（与 x_edit_0 同结构）。"
+    },
+    {
+      "alias": "post.axes_grid.y_edit_1",
+      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA\\/##Child1##m_Axeseditor2_20AF80AA/####m_Axeseditor2/$$1/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "Y 轴列表区 Child1 第 1 行 InputFloat。"
+    },
+    {
+      "alias": "post.axes_grid.y_plus",
+      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA/**/+",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "右侧 + 在 Child2##m_Axeseditor2_*；有 ID Stack 全路径时改为与 x_plus 同级的 ##Child2##m_Axeseditor2_<hash>/+。"
+    },
+    {
+      "alias": "post.axes_grid.y_use_custom_bounds",
+      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA/Y Axis Use Custom Bounds",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "与 x_use_custom_bounds 同结构；哈希与 y_edit_* 的 GroupBox 一致。"
+    },
+    {
+      "alias": "post.axes_grid.z_edit_0",
+      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2\\/##Child1##m_Axeseditor3_608449E7/####m_Axeseditor3/$$0/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "Z 轴列表区 Child1 第 0 行 InputFloat。"
+    },
+    {
+      "alias": "post.axes_grid.z_edit_1",
+      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2\\/##Child1##m_Axeseditor3_608449E7/####m_Axeseditor3/$$1/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "Z 轴列表区 Child1 第 1 行 InputFloat。"
+    },
+    {
+      "alias": "post.axes_grid.z_plus",
+      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2/**/+",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "同 y_plus；GroupBox 哈希与 z_edit_* 一致。"
+    },
+    {
+      "alias": "post.axes_grid.z_use_custom_bounds",
+      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2/Z Axis Use Custom Bounds",
+      "owner": "Postbug",
+      "tags": [
+        "axes_grid"
+      ],
+      "notes": "与 x_use_custom_bounds 同结构；哈希与 z_edit_* 的 GroupBox 一致。"
+    },
+    {
+      "alias": "post.calculator.add_btn",
+      "ref": "//Calculator##CustomStatePlugin\\/##Quick Settings_89269D63/##table1/$$0/$$2/Add",
+      "owner": "PostTests",
+      "tags": [
+        "calculator"
+      ]
+    },
+    {
+      "alias": "post.calculator.apply",
+      "ref": "//Calculator##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "calculator"
+      ]
+    },
+    {
+      "alias": "post.calculator.function_edit",
+      "ref": "//Calculator##CustomStatePlugin\\/##Function Parameters_9252B66A\\/##Text Editor_C493B56F\\/TextEditor_B2E5042A/#SCROLLX",
+      "owner": "Postbug",
+      "tags": [
+        "calculator"
+      ],
+      "notes": "Function Parameters 内的文本编辑器（全路径含 SCROLLX；哈希变化时用 ID Stack 更新）。"
+    },
+    {
       "alias": "post.case_loader.apply",
       "ref": "//Dimaxer Case Loader/Apply",
       "owner": "Postbug",
@@ -10,6 +212,208 @@
         "post"
       ],
       "notes": "Dimaxer Case Loader 的 Apply 按钮，导入 .dmx 模型后点击确认。"
+    },
+    {
+      "alias": "post.clip.apply",
+      "ref": "//Clip##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "clip",
+        "post"
+      ],
+      "notes": "Apply button on Clip plugin"
+    },
+    {
+      "alias": "post.clip.combo_type",
+      "ref": "//Clip##CustomStatePlugin\\/##Plane Parameters_8405B9F3/Type",
+      "owner": "PostTests",
+      "tags": [
+        "clip",
+        "combo"
+      ]
+    },
+    {
+      "alias": "post.clip.range_x0",
+      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of X/$$0",
+      "owner": "Postbug",
+      "tags": [
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.clip.range_x1",
+      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of X/$$1",
+      "owner": "Postbug",
+      "tags": [
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.clip.range_y0",
+      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Y/$$0",
+      "owner": "Postbug",
+      "tags": [
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.clip.range_y1",
+      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Y/$$1",
+      "owner": "Postbug",
+      "tags": [
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.clip.range_z0",
+      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Z/$$0",
+      "owner": "Postbug",
+      "tags": [
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.clip.range_z1",
+      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Z/$$1",
+      "owner": "Postbug",
+      "tags": [
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.clip.ref_bounds",
+      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Use Reference Bounds",
+      "owner": "Postbug",
+      "tags": [
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.colormap.advanced_collapse",
+      "ref": "//Advanced Color Map Editer/#COLLAPSE",
+      "owner": "Postbug",
+      "tags": [
+        "colormap"
+      ]
+    },
+    {
+      "alias": "post.colormap.editor_table_button",
+      "ref": "//##Popup_e053fed4/##ColorMapEditerTable/$$0/$$1/...##button",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "popup"
+      ],
+      "notes": "Color Map Editer 弹窗内 ...##button；ID Stack 可能显示 /0/1/ 与 $$0/$$1 等价。##Popup 哈希随会话变，与 p0_colormap_2 稳定 ref 保持一致再登记。"
+    },
+    {
+      "alias": "post.contour.apply",
+      "ref": "//Contour##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "contour"
+      ]
+    },
+    {
+      "alias": "post.contour.combo_import_file_item",
+      "ref": "//##Combo_00/Multi Mode1/ImportFile",
+      "owner": "PostTests",
+      "tags": [
+        "contour",
+        "combo"
+      ]
+    },
+    {
+      "alias": "post.contour.combo_multi_mode",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Multi Mode",
+      "owner": "PostTests",
+      "tags": [
+        "contour"
+      ]
+    },
+    {
+      "alias": "post.contour.combo_quantity",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox1_AC250586/Quantity",
+      "owner": "PostTests",
+      "tags": [
+        "contour"
+      ]
+    },
+    {
+      "alias": "post.contour.exit",
+      "ref": "//Contour##CustomStatePlugin/ContentTable/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "contour"
+      ]
+    },
+    {
+      "alias": "post.contour.export_datasource",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Export DataSource",
+      "owner": "Postbug",
+      "tags": [
+        "contour"
+      ]
+    },
+    {
+      "alias": "post.contour.import_datasource",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Import DataSource",
+      "owner": "PostTests",
+      "tags": [
+        "contour"
+      ]
+    },
+    {
+      "alias": "post.contour.input_generate_number",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Generate Number/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "contour"
+      ]
+    },
+    {
+      "alias": "post.contour.roweditor_edit_r0",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child1RowEditor_58C0A047/##RowEditor/$$0/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "contour",
+        "roweditor"
+      ]
+    },
+    {
+      "alias": "post.contour.roweditor_edit_r1",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child1RowEditor_58C0A047/##RowEditor/$$1/##edit",
+      "owner": "PostTests",
+      "tags": [
+        "contour",
+        "roweditor"
+      ]
+    },
+    {
+      "alias": "post.contour.roweditor_edit_r2",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child1RowEditor_58C0A047/##RowEditor/$$2/##edit",
+      "owner": "Postbug",
+      "tags": [
+        "contour",
+        "roweditor"
+      ]
+    },
+    {
+      "alias": "post.contour.roweditor_plus",
+      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child2RowEditor_00D65A59/+",
+      "owner": "PostTests",
+      "tags": [
+        "contour",
+        "roweditor"
+      ]
+    },
+    {
+      "alias": "post.contour.source_text",
+      "ref": "//Contour##CustomStatePlugin/ContentTable/##SourceText",
+      "owner": "Postbug",
+      "tags": [
+        "contour"
+      ]
     },
     {
       "alias": "post.dialog.open_button",
@@ -21,6 +425,781 @@
       "notes": "Open file 对话框的 Open 确认按钮。"
     },
     {
+      "alias": "post.dialog.open_file_input",
+      "ref": "//Open a file###OpenFileDialog/##file_input",
+      "owner": "PostTests",
+      "tags": [
+        "dialog"
+      ]
+    },
+    {
+      "alias": "post.dialog.save_button",
+      "ref": "//Save a file###SaveFileDialog/Save",
+      "owner": "Postbug",
+      "tags": [
+        "dialog"
+      ]
+    },
+    {
+      "alias": "post.dialog.save_file_input",
+      "ref": "//Save a file###SaveFileDialog/##file_input",
+      "owner": "Postbug",
+      "tags": [
+        "dialog"
+      ]
+    },
+    {
+      "alias": "post.fft.apply",
+      "ref": "//FFT##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "fft"
+      ]
+    },
+    {
+      "alias": "post.glyph.advanced_options",
+      "ref": "//Glyph##CustomStatePlugin/ContentTable/Advanced Options",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ],
+      "notes": "Advanced Options 折叠头（ID Stack）；收起时 ScaleFactor / Glyph Mode 不可见，用例里需先点开展开。"
+    },
+    {
+      "alias": "post.glyph.apply",
+      "ref": "//Glyph##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ],
+      "notes": "底部 ContentTable；若 ItemNotFound 用 ID Stack 核对或滚动面板到底。"
+    },
+    {
+      "alias": "post.glyph.combo_glyph_mode",
+      "ref": "//Glyph##CustomStatePlugin\\/##GlyphModeSetting_208F8E43/Glyph Mode",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "combo"
+      ],
+      "notes": "Advanced Options → Glyph Setting 内；##GlyphModeSetting_* 哈希变化时用 ID Stack 更新。须先展开 Advanced Options。"
+    },
+    {
+      "alias": "post.glyph.combo_glyph_type",
+      "ref": "//Glyph##CustomStatePlugin\\/##GlyphSourceSetting_80D589D7/Glyph Type",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "combo"
+      ],
+      "notes": "Source Setting 内 Glyph Type Combo；##GlyphSourceSetting_* 哈希随构建/DPI 变化时用 ID Stack 更新。弹出项见 combo_glyph_type_conesource 等。"
+    },
+    {
+      "alias": "post.glyph.combo_glyph_type_arrowsource",
+      "ref": "//##Combo_00/Glyph Type1/ArrowSource",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "combo"
+      ]
+    },
+    {
+      "alias": "post.glyph.combo_glyph_type_conesource",
+      "ref": "//##Combo_00/Glyph Type1/ConeSource",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "combo"
+      ],
+      "notes": "Glyph Type 弹出层项；Glyph Type1 为 Combo PushID，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.glyph.combo_orientation_array",
+      "ref": "//Glyph##CustomStatePlugin/**/Orientation Array",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "combo"
+      ],
+      "notes": "Advanced Options → Position Setting。"
+    },
+    {
+      "alias": "post.glyph.combo_scale_array",
+      "ref": "//Glyph##CustomStatePlugin/**/Scale Array",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "combo"
+      ]
+    },
+    {
+      "alias": "post.glyph.exit",
+      "ref": "//Glyph##CustomStatePlugin/ContentTable/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.invert",
+      "ref": "//Glyph##CustomStatePlugin/**/Invert",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "arrow"
+      ]
+    },
+    {
+      "alias": "post.glyph.max_sample_points",
+      "ref": "//Glyph##CustomStatePlugin/**/Max Sample Points/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.plugin_window",
+      "ref": "//Glyph##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.rotate_0",
+      "ref": "//Glyph##CustomStatePlugin/**/Rotate/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.rotate_1",
+      "ref": "//Glyph##CustomStatePlugin/**/Rotate/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.rotate_2",
+      "ref": "//Glyph##CustomStatePlugin/**/Rotate/$$2/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.scale_0",
+      "ref": "//Glyph##CustomStatePlugin/**/Scale/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ],
+      "notes": "Position Setting 内 Transform Scale（非 ScaleFactor 标量）。"
+    },
+    {
+      "alias": "post.glyph.scale_1",
+      "ref": "//Glyph##CustomStatePlugin/**/Scale/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.scale_2",
+      "ref": "//Glyph##CustomStatePlugin/**/Scale/$$2/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.scale_factor",
+      "ref": "//Glyph##CustomStatePlugin/**/ScaleFactor/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ],
+      "notes": "Advanced Options → Position Setting；路径段为 tr(\"ScaleFactor\")，勿写成 Scale Factor。"
+    },
+    {
+      "alias": "post.glyph.seed",
+      "ref": "//Glyph##CustomStatePlugin/**/Seed/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.shaft_radius",
+      "ref": "//Glyph##CustomStatePlugin/**/Shaft Radius/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "arrow"
+      ]
+    },
+    {
+      "alias": "post.glyph.shaft_resolution",
+      "ref": "//Glyph##CustomStatePlugin/**/Shaft Resolution/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "arrow"
+      ]
+    },
+    {
+      "alias": "post.glyph.source_text",
+      "ref": "//Glyph##CustomStatePlugin/##SourceText",
+      "owner": "Postbug",
+      "tags": [
+        "glyph"
+      ],
+      "notes": "2026-05 snapshot：Source 行在 ContentTable 外 ##SourceText。"
+    },
+    {
+      "alias": "post.glyph.stride",
+      "ref": "//Glyph##CustomStatePlugin/**/Stride/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ],
+      "notes": "Glyph Mode = Every Nth Point 时可见。"
+    },
+    {
+      "alias": "post.glyph.tip_length",
+      "ref": "//Glyph##CustomStatePlugin/**/Tip Length/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "arrow"
+      ]
+    },
+    {
+      "alias": "post.glyph.tip_radius",
+      "ref": "//Glyph##CustomStatePlugin/**/Tip Radius/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "arrow"
+      ]
+    },
+    {
+      "alias": "post.glyph.tip_resolution",
+      "ref": "//Glyph##CustomStatePlugin/**/Tip Resolution/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph",
+        "arrow"
+      ],
+      "notes": "Arrow 源；切换 Glyph Type 后字段集变化。"
+    },
+    {
+      "alias": "post.glyph.translate_0",
+      "ref": "//Glyph##CustomStatePlugin/**/Translate/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.translate_1",
+      "ref": "//Glyph##CustomStatePlugin/**/Translate/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.glyph.translate_2",
+      "ref": "//Glyph##CustomStatePlugin/**/Translate/$$2/##v",
+      "owner": "PostTests",
+      "tags": [
+        "glyph"
+      ]
+    },
+    {
+      "alias": "post.hub_to_shroud.apply",
+      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud 面板底部的 Apply 按钮"
+    },
+    {
+      "alias": "post.hub_to_shroud.circ_average",
+      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Circ Average",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud 面板的 Circ Average 下拉框"
+    },
+    {
+      "alias": "post.hub_to_shroud.circ_average.mass",
+      "ref": "//##Combo_00/Circ Average2/Mass",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud Circ Average 下拉框的 Mass 选项"
+    },
+    {
+      "alias": "post.hub_to_shroud.scalars",
+      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Scalars",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud 面板的 Scalars 下拉框"
+    },
+    {
+      "alias": "post.hub_to_shroud.scalars.pressure",
+      "ref": "//##Combo_00/Scalars1/Pressure",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud Scalars 下拉框的 Pressure 选项"
+    },
+    {
+      "alias": "post.hub_to_shroud.scalars.wall_distance",
+      "ref": "//##Combo_00/Scalars4/Wall Distance",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud Scalars 下拉框的 Wall Distance 选项"
+    },
+    {
+      "alias": "post.hub_to_shroud.span_samples",
+      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Span Samples/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud 面板的 Span Samples 输入框（ID Stack 显示 /0/，test engine 必须用 $$0）"
+    },
+    {
+      "alias": "post.hub_to_shroud.streamwise",
+      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Streamwise/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "hub_to_shroud",
+        "post"
+      ],
+      "notes": "Hub To Shroud 面板的 Streamwise 输入框（ID Stack 显示 /0/，test engine 必须用 $$0）"
+    },
+    {
+      "alias": "post.insitu.exit",
+      "ref": "//In-Situ Post##CustomStatePlugin/ContentTable/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "insitu"
+      ]
+    },
+    {
+      "alias": "post.line_chart_view1.close",
+      "ref": "//LineChartView1/#CLOSE",
+      "owner": "PostTests",
+      "tags": [
+        "plot",
+        "post"
+      ]
+    },
+    {
+      "alias": "post.line_chart_view2.close",
+      "ref": "//LineChartView2/#CLOSE",
+      "owner": "PostTests",
+      "tags": [
+        "plot",
+        "post"
+      ]
+    },
+    {
+      "alias": "post.link_camera.exit",
+      "ref": "//Link Camera##CustomStatePlugin/ContentTable/Exit",
+      "owner": "PostTests",
+      "tags": [
+        "camera",
+        "plugin"
+      ]
+    },
+    {
+      "alias": "post.link_camera.link",
+      "ref": "//Link Camera##CustomStatePlugin/ContentTable/Link",
+      "owner": "PostTests",
+      "tags": [
+        "camera",
+        "plugin"
+      ]
+    },
+    {
+      "alias": "post.measurement.plugin_close",
+      "ref": "//Measurement##CustomStatePlugin/",
+      "owner": "PostTests",
+      "tags": [
+        "measurement",
+        "plugin"
+      ],
+      "notes": "Plugin title-bar close (same pattern as post.xyplot.plugin_close)."
+    },
+    {
+      "alias": "post.measurement.point1_x",
+      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$0/##point1_x",
+      "owner": "Postbug",
+      "tags": [
+        "measurement"
+      ],
+      "notes": "ImGuiTestEngine: PushID(0) -> $$0 (ID Stack copy path shows /0/ but tests must use $$0)."
+    },
+    {
+      "alias": "post.measurement.point1_y",
+      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$0/##point1_y",
+      "owner": "Postbug",
+      "tags": [
+        "measurement"
+      ]
+    },
+    {
+      "alias": "post.measurement.point1_z",
+      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$0/##point1_z",
+      "owner": "Postbug",
+      "tags": [
+        "measurement"
+      ]
+    },
+    {
+      "alias": "post.measurement.point2_x",
+      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$1/##point2_x",
+      "owner": "Postbug",
+      "tags": [
+        "measurement"
+      ]
+    },
+    {
+      "alias": "post.measurement.point2_y",
+      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$1/##point2_y",
+      "owner": "Postbug",
+      "tags": [
+        "measurement"
+      ]
+    },
+    {
+      "alias": "post.measurement.point2_z",
+      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$1/##point2_z",
+      "owner": "Postbug",
+      "tags": [
+        "measurement"
+      ]
+    },
+    {
+      "alias": "post.meridional.apply",
+      "ref": "//Meridional##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "meridional",
+        "post"
+      ],
+      "notes": "Meridional 面板底部的 Apply 按钮"
+    },
+    {
+      "alias": "post.meridional.scalars",
+      "ref": "//Meridional##CustomStatePlugin/**/Scalars",
+      "owner": "PostTests",
+      "tags": [
+        "meridional",
+        "post"
+      ],
+      "notes": "Meridional 面板中的 Scalars 下拉选择框。用 /**/ 规避 Setting 后面的动态哈希。"
+    },
+    {
+      "alias": "post.meridional.scalars.pressure",
+      "ref": "//##Combo_00/Scalars1/Pressure",
+      "owner": "PostTests",
+      "tags": [
+        "meridional",
+        "post"
+      ],
+      "notes": "Meridional 面板中 Scalars 下拉菜单里的 Pressure(压力)子选项"
+    },
+    {
+      "alias": "post.monitor.name",
+      "ref": "//Monitor##CustomStatePlugin\\/##ReportSetting_FE791120/Name",
+      "owner": "Postbug",
+      "tags": [
+        "monitor"
+      ]
+    },
+    {
+      "alias": "post.multiplane.show_preview",
+      "ref": "//MultiPlane##CustomStatePlugin\\/##MultiPlaneSettings_31FB93CD/Show Preview",
+      "owner": "PostTests",
+      "tags": [
+        "multiplane"
+      ],
+      "notes": "MultiPlane 面板 MultiPlaneSettings 内 Show Preview。"
+    },
+    {
+      "alias": "post.multislice.apply",
+      "ref": "//MultiPlane##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "multislice"
+      ]
+    },
+    {
+      "alias": "post.multislice.combo_plane_mode",
+      "ref": "//MultiPlane##CustomStatePlugin\\/##MultiPlaneSettings_31FB93CD/Plane Mode",
+      "owner": "PostTests",
+      "tags": [
+        "multislice",
+        "combo"
+      ]
+    },
+    {
+      "alias": "post.multislice.exit",
+      "ref": "//MultiPlane##CustomStatePlugin/ContentTable/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "multislice"
+      ]
+    },
+    {
+      "alias": "post.multislice.input_number",
+      "ref": "//MultiPlane##CustomStatePlugin/**/Number/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "multislice"
+      ],
+      "notes": "MultiPlane Settings 内 Number 输入框；/**/ 跳过 MultiPlaneSettings_* hash。"
+    },
+    {
+      "alias": "post.multislice.input_offset",
+      "ref": "//MultiPlane##CustomStatePlugin\\/##OffSet_0B6CDFD8/OffSet/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "multislice"
+      ]
+    },
+    {
+      "alias": "post.multislice.picking_minus",
+      "ref": "//MultiPlane##CustomStatePlugin\\/##PickingPoints_BDBE65A0\\/##Child2_PickingPoints_table_27B02227/-",
+      "owner": "PostTests",
+      "tags": [
+        "multislice",
+        "picking"
+      ]
+    },
+    {
+      "alias": "post.multislice.picking_plus",
+      "ref": "//MultiPlane##CustomStatePlugin\\/##PickingPoints_BDBE65A0\\/##Child2_PickingPoints_table_27B02227/+",
+      "owner": "PostTests",
+      "tags": [
+        "multislice",
+        "picking"
+      ]
+    },
+    {
+      "alias": "post.multislice.plugin_close",
+      "ref": "//MultiPlane##CustomStatePlugin/",
+      "owner": "PostTests",
+      "tags": [
+        "multislice",
+        "plugin"
+      ],
+      "notes": "Plugin title-bar close (same pattern as post.xyplot.plugin_close)."
+    },
+    {
+      "alias": "post.multislice.source_text",
+      "ref": "//MultiPlane##CustomStatePlugin/ContentTable/##SourceText",
+      "owner": "Postbug",
+      "tags": [
+        "multislice"
+      ]
+    },
+    {
+      "alias": "post.particle_tracer.apply",
+      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/Apply",
+      "owner": "Postbug",
+      "tags": [
+        "particle_tracer",
+        "apply"
+      ]
+    },
+    {
+      "alias": "post.particle_tracer.plugin_window",
+      "ref": "//Particle Tracer##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "particle_tracer"
+      ],
+      "notes": "Particle Tracer 面板窗口，用于 capture_window 截图。"
+    },
+    {
+      "alias": "post.particle_tracer.seeds",
+      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/Seeds",
+      "owner": "Postbug",
+      "tags": [
+        "particle_tracer"
+      ]
+    },
+    {
+      "alias": "post.particle_tracer.seeds_boxpointsource",
+      "ref": "//##Combo_00/Seeds0/BoxPointSource",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "particle_tracer",
+        "seeds"
+      ],
+      "notes": "Seeds 下拉框中的 BoxPointSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"BoxPointSource\")。"
+    },
+    {
+      "alias": "post.particle_tracer.seeds_cylinderpointsource",
+      "ref": "//##Combo_00/Seeds1/CylinderPointSource",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "particle_tracer",
+        "seeds"
+      ],
+      "notes": "Seeds 下拉框中的 CylinderPointSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"CylinderPointSource\")。"
+    },
+    {
+      "alias": "post.particle_tracer.seeds_highreslinesource",
+      "ref": "//##Combo_00/Seeds2/HighResLineSource",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "particle_tracer",
+        "seeds"
+      ],
+      "notes": "Seeds 下拉框中的 HighResLineSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"HighResLineSource\")。"
+    },
+    {
+      "alias": "post.particle_tracer.seeds_pointsource",
+      "ref": "//##Combo_00/Seeds3/PointSource",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "particle_tracer",
+        "seeds"
+      ],
+      "notes": "Seeds 下拉框中的 PointSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"PointSource\")。"
+    },
+    {
+      "alias": "post.particle_tracer.show_cylinder",
+      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/##ParticleTable/$$-1/$$1/##ShowCylinder",
+      "owner": "Postbug",
+      "tags": [
+        "particle_tracer"
+      ],
+      "notes": "Particle Tracer ParticleTable 最后一行第2列 ShowCylinder 控件。"
+    },
+    {
+      "alias": "post.particle_tracer.show_line",
+      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/##ParticleTable/$$-1/$$1/##Show Line",
+      "owner": "Postbug",
+      "tags": [
+        "particle_tracer"
+      ],
+      "notes": "Particle Tracer ParticleTable 最后一行第1列 Show Line 控件。"
+    },
+    {
+      "alias": "post.particle_tracer.showbox",
+      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/##ParticleTable/$$-1/$$1/##Showbox",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "particle_tracer",
+        "showbox"
+      ],
+      "notes": "Particle Tracer 面板中的 ShowBox 勾选框。行索引用 $$-1（任意行），切 Seeds 后表格行号会变。"
+    },
+    {
+      "alias": "post.plot_over_line.apply",
+      "ref": "//Plot Over Line##CustomStatePlugin/ContentTable/Apply",
+      "owner": "Postbug",
+      "tags": [
+        "plot_over_line"
+      ]
+    },
+    {
+      "alias": "post.plot_over_line.reselect",
+      "ref": "//Plot Over Line##CustomStatePlugin/ContentTable/Reselect",
+      "owner": "Postbug",
+      "tags": [
+        "plot_over_line"
+      ]
+    },
+    {
+      "alias": "post.popup.colormap_editor.table_button",
+      "ref": "//##Popup_e053fed4/##ColorMapEditerTable/$$0/$$1/...##button",
+      "owner": "Postbug",
+      "tags": [
+        "popup",
+        "colormap",
+        "button"
+      ],
+      "notes": "Popup 弹窗中 ColorMapEditerTable 表格第 0 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
+    },
+    {
+      "alias": "post.probe_data.exit",
+      "ref": "//Probe Data Generation##CustomStatePlugin/ContentTable/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "probe_data"
+      ]
+    },
+    {
+      "alias": "post.probe_data.solution_dir_browse",
+      "ref": "//Probe Data Generation##CustomStatePlugin\\/##FilePathSetting_373B67FA/$$0/...",
+      "owner": "Postbug",
+      "tags": [
+        "probe_data"
+      ],
+      "notes": "Solution Dir row PushID(0) browse button."
+    },
+    {
+      "alias": "post.probe_data.solution_text",
+      "ref": "//Probe Data Generation##CustomStatePlugin\\/##FilePathSetting_373B67FA/##SolutionText",
+      "owner": "Postbug",
+      "tags": [
+        "probe_data"
+      ]
+    },
+    {
+      "alias": "post.probe_sensor.clear",
+      "ref": "//Probe Sensor##CustomStatePlugin/ContentTable/Clear",
+      "owner": "Postbug",
+      "tags": [
+        "probe_sensor",
+        "clear"
+      ],
+      "notes": "Probe Sensor 窗口中的 Clear 清除按钮。"
+    },
+    {
+      "alias": "post.probe_sensor.close",
+      "ref": "//Probe Sensor##CustomStatePlugin",
+      "owner": "Postbug",
+      "tags": [
+        "probe_sensor",
+        "close"
+      ],
+      "notes": "Probe Sensor 面板的关闭按钮。"
+    },
+    {
       "alias": "post.quickaccess",
       "ref": "//QuickAccess",
       "owner": "Postbug",
@@ -29,71 +1208,6 @@
         "window"
       ],
       "notes": "QuickAccess 时间工具条窗口，用于 capture_renderview 截图。"
-    },
-    {
-      "alias": "post.quickaccess.play",
-      "ref": "//QuickAccess\\/##childGroupPlay_68D7C1FE/##wholeChildBtnPlay",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "play"
-      ],
-      "notes": "QuickAccess 工具条的 Play 按钮，启动时间序列动画。"
-    },
-    {
-      "alias": "post.quickaccess.toolbar_expand",
-      "ref": "//QuickAccess/##ToolbarExpandBtn",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "toolbar",
-        "expand"
-      ],
-      "notes": "QuickAccess 工具条的展开按钮，显示时间功能选项。"
-    },
-    {
-      "alias": "post.quickaccess.forward_step",
-      "ref": "//QuickAccess\\/##childGroupForward_D17E3F27/##wholeChildBtnForward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "forward",
-        "step"
-      ],
-      "notes": "QuickAccess 时间控制 - 向前运行一步。"
-    },
-    {
-      "alias": "post.quickaccess.backward_step",
-      "ref": "//QuickAccess\\/##childGroupBackward_7ECA1189/##wholeChildBtnBackward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "backward",
-        "step"
-      ],
-      "notes": "QuickAccess 时间控制 - 向后退一步。"
-    },
-    {
-      "alias": "post.quickaccess.step_to_end",
-      "ref": "//QuickAccess\\/##childGroupStepForward_8579F4EE/##wholeChildBtnStepForward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "step",
-        "end"
-      ],
-      "notes": "QuickAccess 时间控制 - 快进到最后一步。"
-    },
-    {
-      "alias": "post.quickaccess.step_to_begin",
-      "ref": "//QuickAccess\\/##childGroupStepBackward_C5A1EB4A/##wholeChildBtnStepBackward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "step",
-        "begin"
-      ],
-      "notes": "QuickAccess 时间控制 - 快退到第一步。"
     },
     {
       "alias": "post.quickaccess.animation_combo",
@@ -118,6 +1232,17 @@
       "notes": "QuickAccess 时间工具条 - 时间步 index 输入框。"
     },
     {
+      "alias": "post.quickaccess.animation_index_down",
+      "ref": "//QuickAccess/##animationIndex/##down",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "animation",
+        "index"
+      ],
+      "notes": "QuickAccess 时间工具条 - index 数值 -1 按钮。"
+    },
+    {
       "alias": "post.quickaccess.animation_index_up",
       "ref": "//QuickAccess/##animationIndex/##up",
       "owner": "Postbug",
@@ -129,15 +1254,146 @@
       "notes": "QuickAccess 时间工具条 - index 数值 +1 按钮。"
     },
     {
-      "alias": "post.quickaccess.animation_index_down",
-      "ref": "//QuickAccess/##animationIndex/##down",
+      "alias": "post.quickaccess.backward",
+      "ref": "//QuickAccess\\/##childGroupBackward_7ECA1189/##wholeChildBtnBackward",
       "owner": "Postbug",
       "tags": [
         "quickaccess",
-        "animation",
-        "index"
+        "animation"
       ],
-      "notes": "QuickAccess 时间工具条 - index 数值 -1 按钮。"
+      "notes": "动画后退按钮；##childGroupBackward 哈希随 DPI 变化，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.quickaccess.backward_step",
+      "ref": "//QuickAccess\\/##childGroupBackward_7ECA1189/##wholeChildBtnBackward",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "backward",
+        "step"
+      ],
+      "notes": "QuickAccess 时间控制 - 向后退一步。"
+    },
+    {
+      "alias": "post.quickaccess.fit_data",
+      "ref": "//QuickAccess/**/##wholeChildBtnFit data",
+      "owner": "PostTests",
+      "tags": [
+        "quickaccess"
+      ],
+      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.quickaccess.forward",
+      "ref": "//QuickAccess\\/##childGroupForward_D17E3F27/##wholeChildBtnForward",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "animation"
+      ],
+      "notes": "动画前进按钮；##childGroupForward 哈希随 DPI 变化，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.quickaccess.forward_step",
+      "ref": "//QuickAccess\\/##childGroupForward_D17E3F27/##wholeChildBtnForward",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "forward",
+        "step"
+      ],
+      "notes": "QuickAccess 时间控制 - 向前运行一步。"
+    },
+    {
+      "alias": "post.quickaccess.link_camera",
+      "ref": "//QuickAccess/**/##wholeChildBtnLink Camera",
+      "owner": "PostTests",
+      "tags": [
+        "quickaccess",
+        "camera"
+      ],
+      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.quickaccess.measurement",
+      "ref": "//QuickAccess/**/##wholeChildBtnMeasurement",
+      "owner": "PostTests",
+      "tags": [
+        "quickaccess",
+        "measurement"
+      ],
+      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.quickaccess.mesh_shaded_edge",
+      "ref": "//QuickAccess/**/##wholeChildBtnMesh Shaded With Edge",
+      "owner": "PostTests",
+      "tags": [
+        "quickaccess"
+      ],
+      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.quickaccess.play",
+      "ref": "//QuickAccess\\/##childGroupPlay_68D7C1FE/##wholeChildBtnPlay",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "play"
+      ],
+      "notes": "QuickAccess 工具条的 Play 按钮，启动时间序列动画。"
+    },
+    {
+      "alias": "post.quickaccess.rotation",
+      "ref": "//QuickAccess/**/##wholeChildBtnRotation",
+      "owner": "PostTests",
+      "tags": [
+        "quickaccess",
+        "rotation"
+      ],
+      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.quickaccess.show_by_fluid",
+      "ref": "//QuickAccess/**/##wholeChildBtnShow By Fluid",
+      "owner": "PostTests",
+      "tags": [
+        "quickaccess",
+        "contour"
+      ],
+      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.quickaccess.show_by_volume",
+      "ref": "//QuickAccess/**/##wholeChildBtnShow By Volume",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "volume"
+      ],
+      "notes": "QuickAccess Show By Volume 按钮；使用 /**/ 跳过 ##childGroupShow By Volume_* 哈希。"
+    },
+    {
+      "alias": "post.quickaccess.step_to_begin",
+      "ref": "//QuickAccess\\/##childGroupStepBackward_C5A1EB4A/##wholeChildBtnStepBackward",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "step",
+        "begin"
+      ],
+      "notes": "QuickAccess 时间控制 - 快退到第一步。"
+    },
+    {
+      "alias": "post.quickaccess.step_to_end",
+      "ref": "//QuickAccess\\/##childGroupStepForward_8579F4EE/##wholeChildBtnStepForward",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "step",
+        "end"
+      ],
+      "notes": "QuickAccess 时间控制 - 快进到最后一步。"
     },
     {
       "alias": "post.quickaccess.time_0",
@@ -206,46 +1462,137 @@
       "notes": "时间点 0.00049999（animationCombo 下拉项）。"
     },
     {
-      "alias": "post.ribbon.mesh_select_vki59",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_5_VKI59_vol_K2_1",
+      "alias": "post.quickaccess.toolbar_expand",
+      "ref": "//QuickAccess/##ToolbarExpandBtn",
       "owner": "Postbug",
       "tags": [
-        "ribbon",
-        "mesh",
-        "vki59"
-      ],
-      "notes": "vki_59_demo 新模型的 vol 网格选中按钮。"
+        "quickaccess"
+      ]
     },
     {
-      "alias": "post.ribbon.vis_reports1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_Reports1",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "reports",
-        "visibility"
-      ],
-      "notes": "Reports1 可见性勾选框。"
-    },
-    {
-      "alias": "post.scene_properties.colormap_pressure",
-      "ref": "//##Combo_00/2/Pressure",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "colormap"
-      ],
-      "notes": "Color Map 下拉菜单中的 Pressure 选项。"
-    },
-    {
-      "alias": "post.clip.apply",
-      "ref": "//Clip##CustomStatePlugin/ContentTable/Apply",
+      "alias": "post.quickaccess.xy_plot",
+      "ref": "//QuickAccess/**/##wholeChildBtnXYPlot",
       "owner": "PostTests",
       "tags": [
-        "clip",
-        "post"
+        "quickaccess",
+        "xyplot"
       ],
-      "notes": "Apply button on Clip plugin"
+      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.renderview1",
+      "ref": "//RenderView1",
+      "owner": "PostTests",
+      "tags": [
+        "viewport",
+        "capture"
+      ]
+    },
+    {
+      "alias": "post.renderview2",
+      "ref": "//RenderView2",
+      "owner": "PostTests",
+      "tags": [
+        "viewport",
+        "capture"
+      ]
+    },
+    {
+      "alias": "post.repetition.apply",
+      "ref": "//Repetition##CustomStatePlugin/ContentTable/Apply",
+      "owner": "Postbug",
+      "tags": [
+        "repetition"
+      ]
+    },
+    {
+      "alias": "post.reports.apply",
+      "ref": "//Reports##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "reports",
+        "post"
+      ]
+    },
+    {
+      "alias": "post.reports.exit",
+      "ref": "//Reports##CustomStatePlugin/ContentTable/Exit",
+      "owner": "PostTests",
+      "tags": [
+        "reports",
+        "post"
+      ]
+    },
+    {
+      "alias": "post.reports.field_variable_combo",
+      "ref": "//Reports##CustomStatePlugin\\/##ReportSetting_54219553/Field Variable",
+      "owner": "Postbug",
+      "tags": [
+        "reports",
+        "field_variable",
+        "combo"
+      ],
+      "notes": "Reports 面板下的 Field Variable 下拉框。"
+    },
+    {
+      "alias": "post.reports.field_variable_temperature",
+      "ref": "//##Combo_00/Field Variable2/Temperature",
+      "owner": "Postbug",
+      "tags": [
+        "reports",
+        "field_variable",
+        "temperature"
+      ],
+      "notes": "Field Variable 下拉框中的 Temperature 选项（Combo 弹出项）。"
+    },
+    {
+      "alias": "post.reports.option",
+      "ref": "//Reports##CustomStatePlugin/**/Option",
+      "owner": "Postbug",
+      "tags": [
+        "reports"
+      ],
+      "notes": "Report Setting 内 Option 下拉；/**/ 跳过 ##ReportSetting_* 哈希。"
+    },
+    {
+      "alias": "post.reports.option_average",
+      "ref": "//##Combo_00/Option2/Average",
+      "owner": "Postbug",
+      "tags": [
+        "reports",
+        "option",
+        "average"
+      ],
+      "notes": "Option 下拉框中的 Average 选项（Combo 弹出项，item_click 可能不可靠，优先用 combo_click）。"
+    },
+    {
+      "alias": "post.reports.option_combo",
+      "ref": "//Reports##CustomStatePlugin\\/##ReportSetting_54219553/Option",
+      "owner": "Postbug",
+      "tags": [
+        "reports",
+        "option",
+        "combo"
+      ],
+      "notes": "Reports 面板下的 Option 下拉框。"
+    },
+    {
+      "alias": "post.reports.option_maximum",
+      "ref": "//##Combo_00/Option1/Maximum",
+      "owner": "Postbug",
+      "tags": [
+        "reports",
+        "combo"
+      ],
+      "notes": "Option 下拉弹出项 Maximum；Option1 为 Combo PushID。"
+    },
+    {
+      "alias": "post.resample.apply",
+      "ref": "//Resample##CustomStatePlugin/ContentTable/Apply",
+      "owner": "Postbug",
+      "tags": [
+        "resample"
+      ]
     },
     {
       "alias": "post.ribbon.hide_all",
@@ -257,64 +1604,42 @@
       ]
     },
     {
-      "alias": "post.ribbon.show_all",
-      "ref": "//RibbonScene/**/##wholeChildBtnRibbon Scene Show All",
+      "alias": "post.ribbon.mesh_calc_result",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_Calculator1",
       "owner": "PostTests",
       "tags": [
-        "ribbon",
-        "scene"
-      ],
-      "notes": "场景 Ribbon 工具条 Show All；与 hide_all 同组。"
-    },
-    {
-      "alias": "post.ribbon.rename",
-      "ref": "//RibbonScene/**/##wholeChildBtnRibbon Scene Rename",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "scene"
-      ],
-      "notes": "场景树 Rename；debug_label 在 snapshot 中可能被截断为 Ren。"
-    },
-    {
-      "alias": "post.ribbon.remove_selected",
-      "ref": "//RibbonScene/**/##wholeChildBtnRibbon Scene Remove selected objects",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "scene"
-      ],
-      "notes": "场景树 Remove selected objects；debug_label 可能被截断为 Rem。"
-    },
-    {
-      "alias": "post.ribbon.model_browser_filter",
-      "ref": "//RibbonScene/##ModelBrowserFilter",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon",
-        "scene",
-        "filter"
+        "ribbon"
       ]
     },
     {
-      "alias": "post.ribbon.meshes_open_state",
-      "ref": "//RibbonScene/**/##OpenState_2_Model",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon",
-        "scene",
-        "meshes"
-      ],
-      "notes": "Meshes 分组展开/折叠；Meshes_* 哈希随版本变化，用 /**/。"
-    },
-    {
-      "alias": "post.ribbon.scene_setting",
-      "ref": "//RibbonScene/Setting",
+      "alias": "post.ribbon.mesh_contour1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_VTKmContour1",
       "owner": "Postbug",
       "tags": [
         "ribbon",
-        "scene"
-      ]
+        "contour"
+      ],
+      "notes": "Apply 后场景树 Contour1；##SelectBtn 序号随树变化，用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.ribbon.mesh_postglyph1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_PostGlyph1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "glyph"
+      ],
+      "notes": "Apply 后场景树 PostGlyph1；##SelectBtn 序号随树变化，用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.ribbon.mesh_pvtransform1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_PVTransform1",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "transform"
+      ],
+      "notes": "Apply 后场景树 PVTransform1；##SelectBtn 序号随树变化，用 ID Stack 更新。"
     },
     {
       "alias": "post.ribbon.mesh_select_19",
@@ -336,894 +1661,96 @@
       "notes": "Post 场景树 dmh 根节点（蓝条 19-0.000949999958 那一行）。##SelectBtn 前数字随树变化，用 ID Stack 对根节点复制 path 更新。"
     },
     {
-      "alias": "post.scene_tree.popup_delete",
-      "ref": "//##Popup_18d95aa7/Delete",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "popup"
-      ],
-      "notes": "场景树右键 Delete；##Popup 哈希随会话变化，失败时用 ID Stack 更新 ref。"
-    },
-    {
-      "alias": "post.top.new",
-      "ref": "//TopPanel/**/##wholeChildBtnNew",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "file"
-      ],
-      "notes": "新建工程；TopPanel /**/ 跳过 Post##table_* / ##childGroup* 哈希。"
-    },
-    {
-      "alias": "post.top.open_files",
-      "ref": "//TopPanel/**/##wholeChildBtnOpen files",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "file"
-      ],
-      "notes": "Open files 主按钮；ImportModelPost 在 C++ 中仍用固定 childGroup 路径。"
-    },
-    {
-      "alias": "post.top.open_files_dropdown",
-      "ref": "//TopPanel/**/##DropDownOpen files",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "file"
-      ]
-    },
-    {
-      "alias": "post.top.export_usd",
-      "ref": "//TopPanel/**/##wholeChildBtnExport USD",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "file"
-      ]
-    },
-    {
-      "alias": "post.top.save_scene",
-      "ref": "//TopPanel/**/##wholeChildBtnSave Scene",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "file"
-      ]
-    },
-    {
-      "alias": "post.top.save_scene_as",
-      "ref": "//TopPanel/**/##wholeChildBtnSave Scene As",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "file"
-      ]
-    },
-    {
-      "alias": "post.top.clip_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnClip",
-      "owner": "PostTests",
-      "tags": [
-        "top",
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.clip.combo_type",
-      "ref": "//Clip##CustomStatePlugin\\/##Plane Parameters_8405B9F3/Type",
-      "owner": "PostTests",
-      "tags": [
-        "clip",
-        "combo"
-      ]
-    },
-    {
-      "alias": "post.clip.ref_bounds",
-      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Use Reference Bounds",
-      "owner": "Postbug",
-      "tags": [
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.clip.range_x0",
-      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of X/$$0",
-      "owner": "Postbug",
-      "tags": [
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.clip.range_x1",
-      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of X/$$1",
-      "owner": "Postbug",
-      "tags": [
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.clip.range_y0",
-      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Y/$$0",
-      "owner": "Postbug",
-      "tags": [
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.clip.range_y1",
-      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Y/$$1",
-      "owner": "Postbug",
-      "tags": [
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.clip.range_z0",
-      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Z/$$0",
-      "owner": "Postbug",
-      "tags": [
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.clip.range_z1",
-      "ref": "//Clip##CustomStatePlugin\\/##CustomGroupBox3_697F335B/Range of Z/$$1",
-      "owner": "Postbug",
-      "tags": [
-        "clip"
-      ]
-    },
-    {
-      "alias": "post.renderview1",
-      "ref": "//RenderView1",
-      "owner": "PostTests",
-      "tags": [
-        "viewport",
-        "capture"
-      ]
-    },
-    {
-      "alias": "post.top.contour_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnContour",
-      "owner": "PostTests",
-      "tags": [
-        "contour"
-      ],
-      "notes": "Wildcard skips Post##table_* / ##SmallSet* / ##childGroupContour_* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.glyph_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnGlyph",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "glyph"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.glyph.apply",
-      "ref": "//Glyph##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ],
-      "notes": "底部 ContentTable；若 ItemNotFound 用 ID Stack 核对或滚动面板到底。"
-    },
-    {
-      "alias": "post.glyph.exit",
-      "ref": "//Glyph##CustomStatePlugin/ContentTable/Exit",
-      "owner": "Postbug",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.source_text",
-      "ref": "//Glyph##CustomStatePlugin/##SourceText",
-      "owner": "Postbug",
-      "tags": [
-        "glyph"
-      ],
-      "notes": "2026-05 snapshot：Source 行在 ContentTable 外 ##SourceText。"
-    },
-    {
-      "alias": "post.glyph.advanced_options",
-      "ref": "//Glyph##CustomStatePlugin/ContentTable/Advanced Options",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ],
-      "notes": "Advanced Options 折叠头（ID Stack）；收起时 ScaleFactor / Glyph Mode 不可见，用例里需先点开展开。"
-    },
-    {
-      "alias": "post.glyph.combo_glyph_type",
-      "ref": "//Glyph##CustomStatePlugin\\/##GlyphSourceSetting_80D589D7/Glyph Type",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "combo"
-      ],
-      "notes": "Source Setting 内 Glyph Type Combo；##GlyphSourceSetting_* 哈希随构建/DPI 变化时用 ID Stack 更新。弹出项见 combo_glyph_type_conesource 等。"
-    },
-    {
-      "alias": "post.glyph.combo_glyph_type_conesource",
-      "ref": "//##Combo_00/Glyph Type1/ConeSource",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "combo"
-      ],
-      "notes": "Glyph Type 弹出层项；Glyph Type1 为 Combo PushID，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.glyph.combo_glyph_type_arrowsource",
-      "ref": "//##Combo_00/Glyph Type1/ArrowSource",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "combo"
-      ]
-    },
-    {
-      "alias": "post.glyph.tip_resolution",
-      "ref": "//Glyph##CustomStatePlugin/**/Tip Resolution/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "arrow"
-      ],
-      "notes": "Arrow 源；切换 Glyph Type 后字段集变化。"
-    },
-    {
-      "alias": "post.glyph.tip_radius",
-      "ref": "//Glyph##CustomStatePlugin/**/Tip Radius/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "arrow"
-      ]
-    },
-    {
-      "alias": "post.glyph.tip_length",
-      "ref": "//Glyph##CustomStatePlugin/**/Tip Length/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "arrow"
-      ]
-    },
-    {
-      "alias": "post.glyph.shaft_radius",
-      "ref": "//Glyph##CustomStatePlugin/**/Shaft Radius/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "arrow"
-      ]
-    },
-    {
-      "alias": "post.glyph.shaft_resolution",
-      "ref": "//Glyph##CustomStatePlugin/**/Shaft Resolution/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "arrow"
-      ]
-    },
-    {
-      "alias": "post.glyph.invert",
-      "ref": "//Glyph##CustomStatePlugin/**/Invert",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "arrow"
-      ]
-    },
-    {
-      "alias": "post.glyph.combo_orientation_array",
-      "ref": "//Glyph##CustomStatePlugin/**/Orientation Array",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "combo"
-      ],
-      "notes": "Advanced Options → Position Setting。"
-    },
-    {
-      "alias": "post.glyph.combo_scale_array",
-      "ref": "//Glyph##CustomStatePlugin/**/Scale Array",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "combo"
-      ]
-    },
-    {
-      "alias": "post.glyph.scale_factor",
-      "ref": "//Glyph##CustomStatePlugin/**/ScaleFactor/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ],
-      "notes": "Advanced Options → Position Setting；路径段为 tr(\"ScaleFactor\")，勿写成 Scale Factor。"
-    },
-    {
-      "alias": "post.glyph.translate_0",
-      "ref": "//Glyph##CustomStatePlugin/**/Translate/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.translate_1",
-      "ref": "//Glyph##CustomStatePlugin/**/Translate/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.translate_2",
-      "ref": "//Glyph##CustomStatePlugin/**/Translate/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.rotate_0",
-      "ref": "//Glyph##CustomStatePlugin/**/Rotate/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.rotate_1",
-      "ref": "//Glyph##CustomStatePlugin/**/Rotate/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.rotate_2",
-      "ref": "//Glyph##CustomStatePlugin/**/Rotate/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.scale_0",
-      "ref": "//Glyph##CustomStatePlugin/**/Scale/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ],
-      "notes": "Position Setting 内 Transform Scale（非 ScaleFactor 标量）。"
-    },
-    {
-      "alias": "post.glyph.scale_1",
-      "ref": "//Glyph##CustomStatePlugin/**/Scale/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.scale_2",
-      "ref": "//Glyph##CustomStatePlugin/**/Scale/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.combo_glyph_mode",
-      "ref": "//Glyph##CustomStatePlugin\\/##GlyphModeSetting_208F8E43/Glyph Mode",
-      "owner": "PostTests",
-      "tags": [
-        "glyph",
-        "combo"
-      ],
-      "notes": "Advanced Options → Glyph Setting 内；##GlyphModeSetting_* 哈希变化时用 ID Stack 更新。须先展开 Advanced Options。"
-    },
-    {
-      "alias": "post.glyph.max_sample_points",
-      "ref": "//Glyph##CustomStatePlugin/**/Max Sample Points/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.seed",
-      "ref": "//Glyph##CustomStatePlugin/**/Seed/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.glyph.stride",
-      "ref": "//Glyph##CustomStatePlugin/**/Stride/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ],
-      "notes": "Glyph Mode = Every Nth Point 时可见。"
-    },
-    {
-      "alias": "post.glyph.plugin_window",
-      "ref": "//Glyph##CustomStatePlugin",
-      "owner": "PostTests",
-      "tags": [
-        "glyph"
-      ]
-    },
-    {
-      "alias": "post.ribbon.mesh_postglyph1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_PostGlyph1",
+      "alias": "post.ribbon.mesh_select_fft_test_random_signal",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_fft_test_random_signal",
       "owner": "PostTests",
       "tags": [
         "ribbon",
-        "glyph"
+        "mesh",
+        "fft"
       ],
-      "notes": "Apply 后场景树 PostGlyph1；##SelectBtn 序号随树变化，用 ID Stack 更新。"
+      "notes": "CSV 导入后的 fft_test_random_signal 节点；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
     },
     {
-      "alias": "post.top.probe_sensor_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnProbe Sensor",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "probe"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.probe_sensor.clear",
-      "ref": "//Probe Sensor##CustomStatePlugin/ContentTable/Clear",
-      "owner": "Postbug",
-      "tags": [
-        "probe_sensor",
-        "clear"
-      ],
-      "notes": "Probe Sensor 窗口中的 Clear 清除按钮。"
-    },
-    {
-      "alias": "post.probe_sensor.close",
-      "ref": "//Probe Sensor##CustomStatePlugin",
-      "owner": "Postbug",
-      "tags": [
-        "probe_sensor",
-        "close"
-      ],
-      "notes": "Probe Sensor 面板的关闭按钮。"
-    },
-    {
-      "alias": "post.top.plot_over_line_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnPlot Over Line",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "plot_over_line"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.particle_tracer_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnParticle Tracer",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "particle_tracer"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.particle_tracer.seeds",
-      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/Seeds",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer",
-        "seeds"
-      ],
-      "notes": "Particle Tracer 面板中的 Seeds 下拉框。"
-    },
-    {
-      "alias": "post.particle_tracer.showbox",
-      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/##ParticleTable/$$-1/$$1/##Showbox",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer",
-        "showbox"
-      ],
-      "notes": "Particle Tracer 面板中的 ShowBox 勾选框。行索引用 $$-1（任意行），切 Seeds 后表格行号会变。"
-    },
-    {
-      "alias": "post.particle_tracer.seeds_boxpointsource",
-      "ref": "//##Combo_00/Seeds0/BoxPointSource",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer",
-        "seeds"
-      ],
-      "notes": "Seeds 下拉框中的 BoxPointSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"BoxPointSource\")。"
-    },
-    {
-      "alias": "post.particle_tracer.seeds_cylinderpointsource",
-      "ref": "//##Combo_00/Seeds1/CylinderPointSource",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer",
-        "seeds"
-      ],
-      "notes": "Seeds 下拉框中的 CylinderPointSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"CylinderPointSource\")。"
-    },
-    {
-      "alias": "post.particle_tracer.seeds_highreslinesource",
-      "ref": "//##Combo_00/Seeds2/HighResLineSource",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer",
-        "seeds"
-      ],
-      "notes": "Seeds 下拉框中的 HighResLineSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"HighResLineSource\")。"
-    },
-    {
-      "alias": "post.particle_tracer.seeds_pointsource",
-      "ref": "//##Combo_00/Seeds3/PointSource",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer",
-        "seeds"
-      ],
-      "notes": "Seeds 下拉框中的 PointSource 选项。⚠️ 优先用 combo_click(post.particle_tracer.seeds, \"PointSource\")。"
-    },
-    {
-      "alias": "post.particle_tracer.apply",
-      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer",
-        "apply"
-      ],
-      "notes": "Particle Tracer 面板的 Apply 按键。"
-    },
-    {
-      "alias": "post.particle_tracer.plugin_window",
-      "ref": "//Particle Tracer##CustomStatePlugin",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "particle_tracer"
-      ],
-      "notes": "Particle Tracer 面板窗口，用于 capture_window 截图。"
-    },
-    {
-      "alias": "post.top.resample_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnResample",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "resample"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.transform_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnTransform",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "transform"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.transform.combo_type",
-      "ref": "//Transform##CustomStatePlugin\\/##CustomGroupBox1_B0125C97/Transform",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.combo_plane",
-      "ref": "//Transform##CustomStatePlugin\\/##CustomGroupBox1_B0125C97/Plane",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ],
-      "notes": "Reflect 类型 Type Setting 内 Plane 下拉；proxy 枚举名如 X/Y/Z。"
-    },
-    {
-      "alias": "post.transform.plugin_window",
-      "ref": "//Transform##CustomStatePlugin",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.source_text",
-      "ref": "//Transform##CustomStatePlugin/##SourceText",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.show_box",
-      "ref": "//Transform##CustomStatePlugin/**/Show Box",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.translate_0",
-      "ref": "//Transform##CustomStatePlugin/**/Translate/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.translate_1",
-      "ref": "//Transform##CustomStatePlugin/**/Translate/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.translate_2",
-      "ref": "//Transform##CustomStatePlugin/**/Translate/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.scale_0",
-      "ref": "//Transform##CustomStatePlugin/**/Scale/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.scale_1",
-      "ref": "//Transform##CustomStatePlugin/**/Scale/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.scale_2",
-      "ref": "//Transform##CustomStatePlugin/**/Scale/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.center_0",
-      "ref": "//Transform##CustomStatePlugin/**/Center/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ],
-      "notes": "Reflect 类型 Preview Setting 内 Center（单分量）。"
-    },
-    {
-      "alias": "post.transform.origin_0",
-      "ref": "//Transform##CustomStatePlugin/**/Origin/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.origin_1",
-      "ref": "//Transform##CustomStatePlugin/**/Origin/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.origin_2",
-      "ref": "//Transform##CustomStatePlugin/**/Origin/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.rotate_0",
-      "ref": "//Transform##CustomStatePlugin/**/Rotate/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ],
-      "notes": "RotateAroundOriginTransform 类型 Preview Setting 内 Rotate。"
-    },
-    {
-      "alias": "post.transform.rotate_1",
-      "ref": "//Transform##CustomStatePlugin/**/Rotate/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.rotate_2",
-      "ref": "//Transform##CustomStatePlugin/**/Rotate/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.apply",
-      "ref": "//Transform##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.transform.exit",
-      "ref": "//Transform##CustomStatePlugin/ContentTable/Exit",
-      "owner": "PostTests",
-      "tags": [
-        "transform"
-      ]
-    },
-    {
-      "alias": "post.ribbon.mesh_pvtransform1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_PVTransform1",
+      "alias": "post.ribbon.mesh_select_vki59",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_VKI59_vol_K2",
       "owner": "Postbug",
       "tags": [
         "ribbon",
-        "transform"
+        "mesh",
+        "vtu"
       ],
-      "notes": "Apply 后场景树 PVTransform1；##SelectBtn 序号随树变化，用 ID Stack 更新。"
+      "notes": "VKI59 VTU 导入后的场景树网格节点；##SelectBtn 序号随树变化，失败时用 ID Stack 更新。"
     },
     {
-      "alias": "post.top.threshold_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnThreshold",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "threshold"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.threshold.plugin_window",
-      "ref": "//Threshold##CustomStatePlugin",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ]
-    },
-    {
-      "alias": "post.threshold.source_text",
-      "ref": "//Threshold##CustomStatePlugin/##SourceText",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ]
-    },
-    {
-      "alias": "post.threshold.combo_scalars",
-      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Scalars",
-      "owner": "PostTests",
-      "tags": [
-        "threshold",
-        "combo"
-      ],
-      "notes": "Scalar Setting 区 Scalars；CustomStatePlugin 与 GroupBox 之间须 \\/（与 ID Stack / snapshot 一致）。"
-    },
-    {
-      "alias": "post.threshold.combo_method",
-      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Threshold Method",
-      "owner": "PostTests",
-      "tags": [
-        "threshold",
-        "combo"
-      ],
-      "notes": "Between / Below Lower Threshold / Above Upper Threshold。"
-    },
-    {
-      "alias": "post.threshold.lower",
-      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Lower Threshold/##InputValue",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ],
-      "notes": "GroupSliderAndInput PushID(Lower Threshold) → ##InputValue；勿用裸 ##InputValue（与 Upper 冲突）。"
-    },
-    {
-      "alias": "post.threshold.upper",
-      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Upper Threshold/##InputValue",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ],
-      "notes": "GroupSliderAndInput PushID(Upper Threshold) → ##InputValue。"
-    },
-    {
-      "alias": "post.threshold.all_scalars",
-      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox2_758CEC8F/All Scalars",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ],
-      "notes": "Interactivity Controls 区；##CustomGroupBox2_* 哈希随构建变化时用 snapshot 更新。"
-    },
-    {
-      "alias": "post.threshold.use_continuous_cell_range",
-      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox2_758CEC8F/Use Continuous Cell Range",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ]
-    },
-    {
-      "alias": "post.threshold.invert",
-      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox2_758CEC8F/Invert",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ],
-      "notes": "Interactivity Controls 最下一行；面板需 scroll_to_bottom(plugin_window) 后可见。"
-    },
-    {
-      "alias": "post.threshold.apply",
-      "ref": "//Threshold##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "threshold"
-      ]
-    },
-    {
-      "alias": "post.threshold.exit",
-      "ref": "//Threshold##CustomStatePlugin/ContentTable/Exit",
+      "alias": "post.ribbon.mesh_select_vki59_1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_5_VKI59_vol_K2_1",
       "owner": "Postbug",
       "tags": [
-        "threshold"
+        "ribbon",
+        "mesh",
+        "vtu"
+      ],
+      "notes": ".dmx 导入后场景树 VKI59_vol_K2_1 节点；##SelectBtn 序号随树变化。"
+    },
+    {
+      "alias": "post.ribbon.mesh_select_vki59_vol_k2",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_VKI59_vol_K2",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "mesh",
+        "vtu"
+      ],
+      "notes": "VKI59 VTU 导入后的场景树网格节点；##SelectBtn 序号随树变化，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.ribbon.mesh_select_vki59_vol_k2_1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_5_VKI59_vol_K2_1",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "mesh",
+        "vki59"
+      ],
+      "notes": "vki_59_demo 新模型的 vol 网格选中按钮。"
+    },
+    {
+      "alias": "post.ribbon.mesh_slice1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_Slice1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon"
       ]
+    },
+    {
+      "alias": "post.ribbon.mesh_streamtracer1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_StreamTracer1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "streamline"
+      ]
+    },
+    {
+      "alias": "post.ribbon.mesh_streamtracer1_vki59",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_4_StreamTracer1",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "streamline"
+      ],
+      "notes": "VKI59 StreamTracer apply 后场景树节点；##SelectBtn 序号随树变化。"
+    },
+    {
+      "alias": "post.ribbon.mesh_table_fft1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_4_TableFFT1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "fft"
+      ],
+      "notes": "CSV/FFT 导入后的 TableFFT1 场景树选择按钮；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
     },
     {
       "alias": "post.ribbon.mesh_threshold1",
@@ -1236,6 +1763,123 @@
       "notes": "Apply 后场景树 Threshold1；##SelectBtn 序号随树变化，用 snapshot 更新。"
     },
     {
+      "alias": "post.ribbon.meshes_open_state",
+      "ref": "//RibbonScene/**/##OpenState_2_Model",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "scene",
+        "meshes"
+      ],
+      "notes": "Meshes 分组展开/折叠；Meshes_* 哈希随版本变化，用 /**/。"
+    },
+    {
+      "alias": "post.ribbon.model_browser_filter",
+      "ref": "//RibbonScene/##ModelBrowserFilter",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "scene",
+        "filter"
+      ]
+    },
+    {
+      "alias": "post.ribbon.remove_selected",
+      "ref": "//RibbonScene/**/##wholeChildBtnRibbon Scene Remove selected objects",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "scene"
+      ],
+      "notes": "场景树 Remove selected objects；debug_label 可能被截断为 Rem。"
+    },
+    {
+      "alias": "post.ribbon.rename",
+      "ref": "//RibbonScene/**/##wholeChildBtnRibbon Scene Rename",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "scene"
+      ],
+      "notes": "场景树 Rename；debug_label 在 snapshot 中可能被截断为 Ren。"
+    },
+    {
+      "alias": "post.ribbon.scene_result_combo",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$-1/$$1/##value",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon"
+      ]
+    },
+    {
+      "alias": "post.ribbon.scene_setting",
+      "ref": "//RibbonScene/Setting",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "scene"
+      ]
+    },
+    {
+      "alias": "post.ribbon.show_all",
+      "ref": "//RibbonScene/**/##wholeChildBtnRibbon Scene Show All",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "scene"
+      ],
+      "notes": "场景 Ribbon 工具条 Show All；与 hide_all 同组。"
+    },
+    {
+      "alias": "post.ribbon.vis_fft_random_signal",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox3_fft_test_random_signal",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "fft"
+      ],
+      "notes": "FFT CSV 导入后的 fft_test_random_signal 可见性勾选框；##VisibilityCheckbox 序号随树变化。"
+    },
+    {
+      "alias": "post.ribbon.vis_particle_tracer1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_ParticleTracer1",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "particle_tracer"
+      ],
+      "notes": "Particle Tracer High Res Line Source 的可见性勾选框；##VisibilityCheckbox 序号随树变化。"
+    },
+    {
+      "alias": "post.ribbon.vis_reports1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_Reports1",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "reports",
+        "visibility"
+      ],
+      "notes": "Reports1 可见性勾选框。"
+    },
+    {
+      "alias": "post.ribbon.vis_slice1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox14_Slice1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon"
+      ]
+    },
+    {
+      "alias": "post.ribbon.vis_table_fft1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_TableFFT1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "fft"
+      ],
+      "notes": "CSV/FFT 导入后的 TableFFT1 可见性勾选框；##VisibilityCheckbox 前序号随场景树变化，失败时用 ID Stack 更新。"
+    },
+    {
       "alias": "post.ribbon.vis_threshold1",
       "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_Threshold1",
       "owner": "PostTests",
@@ -1246,327 +1890,60 @@
       "notes": "Threshold1 可见性；Apply 后隐藏源 vol 仅看过滤结果时用。"
     },
     {
-      "alias": "post.top.warp_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnWarp",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "warp"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.warp.apply",
-      "ref": "//Warp##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "warp",
-        "post"
-      ],
-      "notes": "Warp 面板底部的 Apply 按钮"
-    },
-    {
-      "alias": "post.warp.scale_factor",
-      "ref": "//Warp##CustomStatePlugin/**/Scale Factor/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "warp",
-        "post"
-      ],
-      "notes": "Warp 面板中的 Scale Factor 输入框。用 /**/ 跳过动态哈希，用 $$0 对齐 ImGui 行号规范。"
-    },
-    {
-      "alias": "post.top.blade_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnBlade",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "blade"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.meridional_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnMeridional",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "meridional"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.meridional.apply",
-      "ref": "//Meridional##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "meridional",
-        "post"
-      ],
-      "notes": "Meridional 面板底部的 Apply 按钮"
-    },
-    {
-      "alias": "post.meridional.scalars",
-      "ref": "//Meridional##CustomStatePlugin/**/Scalars",
-      "owner": "PostTests",
-      "tags": [
-        "meridional",
-        "post"
-      ],
-      "notes": "Meridional 面板中的 Scalars 下拉选择框。用 /**/ 规避 Setting 后面的动态哈希。"
-    },
-    {
-      "alias": "post.meridional.scalars.pressure",
-      "ref": "//##Combo_00/Scalars1/Pressure",
-      "owner": "PostTests",
-      "tags": [
-        "meridional",
-        "post"
-      ],
-      "notes": "Meridional 面板中 Scalars 下拉菜单里的 Pressure(压力)子选项"
-    },
-    {
-      "alias": "post.top.blade_loading_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnBlade Loading",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "blade_loading"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.hub_to_shroud_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnHub To Shroud",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "hub_to_shroud"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.hub_to_shroud_panel_exact",
-      "ref": "//TopPanel\\/Post##table_8D1CB68C\\/##SmallSetBlade Loading_8BC6199F\\/##childGroupHub To Shroud_8B039258/##wholeChildBtnHub To Shroud",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "hub_to_shroud"
-      ],
-      "notes": "Hub To Shroud 精确路径（嵌套在 Blade Loading 分组下）；通配符版本见 post.top.hub_to_shroud_panel。"
-    },
-    {
-      "alias": "post.hub_to_shroud.apply",
-      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud 面板底部的 Apply 按钮"
-    },
-    {
-      "alias": "post.hub_to_shroud.scalars",
-      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Scalars",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud 面板的 Scalars 下拉框"
-    },
-    {
-      "alias": "post.hub_to_shroud.streamwise",
-      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Streamwise/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud 面板的 Streamwise 输入框（ID Stack 显示 /0/，test engine 必须用 $$0）"
-    },
-    {
-      "alias": "post.hub_to_shroud.span_samples",
-      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Span Samples/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud 面板的 Span Samples 输入框（ID Stack 显示 /0/，test engine 必须用 $$0）"
-    },
-    {
-      "alias": "post.hub_to_shroud.circ_average",
-      "ref": "//Hub To Shroud##CustomStatePlugin/ContentTable/Circ Average",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud 面板的 Circ Average 下拉框"
-    },
-    {
-      "alias": "post.hub_to_shroud.circ_average.mass",
-      "ref": "//##Combo_00/Circ Average2/Mass",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud Circ Average 下拉框的 Mass 选项"
-    },
-    {
-      "alias": "post.hub_to_shroud.scalars.pressure",
-      "ref": "//##Combo_00/Scalars1/Pressure",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud Scalars 下拉框的 Pressure 选项"
-    },
-    {
-      "alias": "post.hub_to_shroud.scalars.wall_distance",
-      "ref": "//##Combo_00/Scalars4/Wall Distance",
-      "owner": "PostTests",
-      "tags": [
-        "hub_to_shroud",
-        "post"
-      ],
-      "notes": "Hub To Shroud Scalars 下拉框的 Wall Distance 选项"
-    },
-    {
-      "alias": "post.top.probe_data_generation_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnProbe Data Generation",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "probe_data"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.probe_data.solution_dir_browse",
-      "ref": "//Probe Data Generation##CustomStatePlugin\\/##FilePathSetting_373B67FA/$$0/...",
+      "alias": "post.ribbon.vis_vki59",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_vol",
       "owner": "Postbug",
       "tags": [
-        "probe_data"
+        "ribbon",
+        "mesh",
+        "vtu"
       ],
-      "notes": "Solution Dir row PushID(0) browse button."
+      "notes": "dmh 模型导入后的 Volume 可见性勾选框；##VisibilityCheckbox 序号随树变化，失败时用 ID Stack 更新。"
     },
     {
-      "alias": "post.probe_data.solution_text",
-      "ref": "//Probe Data Generation##CustomStatePlugin\\/##FilePathSetting_373B67FA/##SolutionText",
+      "alias": "post.ribbon.vis_vki59_1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox5_VKI59_vol_K2_1",
       "owner": "Postbug",
       "tags": [
-        "probe_data"
+        "ribbon",
+        "mesh"
+      ],
+      "notes": ".dmx 导入后 VKI59_vol_K2_1 的可见性勾选框；##VisibilityCheckbox 序号随树变化。"
+    },
+    {
+      "alias": "post.ribbon.vis_vol19",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_vol",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon"
       ]
     },
     {
-      "alias": "post.probe_data.exit",
-      "ref": "//Probe Data Generation##CustomStatePlugin/ContentTable/Exit",
+      "alias": "post.ribbonscene.meshes.visibility_checkbox_volume",
+      "ref": "//RibbonScene/**/##VisibilityCheckbox4_vol",
       "owner": "Postbug",
       "tags": [
-        "probe_data"
-      ]
-    },
-    {
-      "alias": "post.top.rom_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnROM",
-      "owner": "Postbug",
-      "tags": [
-        "rom"
-      ]
-    },
-    {
-      "alias": "post.top.rom_dropdown",
-      "ref": "//TopPanel/**/##DropDownROM",
-      "owner": "Postbug",
-      "tags": [
-        "post",
-        "top",
-        "rom"
+        "ribbonscene",
+        "meshes",
+        "volume",
+        "visibility"
       ],
-      "notes": "ROM 分组下拉箭头；与 rom_panel 同组。"
+      "notes": "RibbonScene 中 Meshes 面板的 Volume 可见性勾选框；定位路径为 Meshes_8900099D 下的 ##VisibilityCheckbox4_vol。"
     },
     {
-      "alias": "post.top.macro_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnMacro",
+      "alias": "post.ribbonscene.scene_properties.table_button",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/...##button",
       "owner": "Postbug",
       "tags": [
-        "post",
-        "top",
-        "macro"
-      ]
-    },
-    {
-      "alias": "post.top.macro_dropdown",
-      "ref": "//TopPanel/**/##DropDownMacro",
-      "owner": "Postbug",
-      "tags": [
-        "post",
-        "top",
-        "macro"
-      ]
-    },
-    {
-      "alias": "post.rom.add_variable",
-      "ref": "//ROM##CustomStatePlugin/ContentTable/Add Variable",
-      "owner": "Postbug",
-      "tags": [
-        "rom"
-      ]
+        "ribbonscene",
+        "scene_properties",
+        "button"
+      ],
+      "notes": "RibbonScene 中 Scene Properties 面板 table1 表格第 2 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
     },
     {
       "alias": "post.rom.add_header",
       "ref": "//ROM##CustomStatePlugin/ContentTable/Add Header",
-      "owner": "Postbug",
-      "tags": [
-        "rom"
-      ]
-    },
-    {
-      "alias": "post.rom.header_name",
-      "ref": "//New Header Name/##HeaderName",
-      "owner": "Postbug",
-      "tags": [
-        "rom"
-      ]
-    },
-    {
-      "alias": "post.rom.header_apply",
-      "ref": "//New Header Name/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "rom"
-      ]
-    },
-    {
-      "alias": "post.rom.header_exit",
-      "ref": "//New Header Name/Exit",
-      "owner": "Postbug",
-      "tags": [
-        "rom"
-      ]
-    },
-    {
-      "alias": "post.rom.reset",
-      "ref": "//ROM##CustomStatePlugin/ContentTable/Reset",
-      "owner": "Postbug",
-      "tags": [
-        "rom"
-      ]
-    },
-    {
-      "alias": "post.rom.add_var.exit",
-      "ref": "//##AddVariablePanel/Exit",
       "owner": "Postbug",
       "tags": [
         "rom"
@@ -1605,437 +1982,238 @@
       ]
     },
     {
-      "alias": "post.top.aero_acoustics_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnAeroAcoustics",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "aero_acoustics"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.fft_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnFFT",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "fft"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.monitor_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnMonitor",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "monitor"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.monitor_dropdown",
-      "ref": "//TopPanel/**/##DropDownMonitor",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "monitor"
-      ]
-    },
-    {
-      "alias": "post.monitor.name",
-      "ref": "//Monitor##CustomStatePlugin\\/##ReportSetting_FE791120/Name",
+      "alias": "post.rom.add_var.exit",
+      "ref": "//##AddVariablePanel/Exit",
       "owner": "Postbug",
       "tags": [
-        "monitor"
+        "rom"
       ]
     },
     {
-      "alias": "post.top.psd_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnPSD",
-      "owner": "PostTests",
+      "alias": "post.rom.add_variable",
+      "ref": "//ROM##CustomStatePlugin/ContentTable/Add Variable",
+      "owner": "Postbug",
       "tags": [
-        "post",
-        "top",
-        "psd"
+        "rom"
+      ]
+    },
+    {
+      "alias": "post.rom.header_apply",
+      "ref": "//New Header Name/Apply",
+      "owner": "Postbug",
+      "tags": [
+        "rom"
+      ]
+    },
+    {
+      "alias": "post.rom.header_exit",
+      "ref": "//New Header Name/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "rom"
+      ]
+    },
+    {
+      "alias": "post.rom.header_name",
+      "ref": "//New Header Name/##HeaderName",
+      "owner": "Postbug",
+      "tags": [
+        "rom"
+      ]
+    },
+    {
+      "alias": "post.rom.reset",
+      "ref": "//ROM##CustomStatePlugin/ContentTable/Reset",
+      "owner": "Postbug",
+      "tags": [
+        "rom"
+      ]
+    },
+    {
+      "alias": "post.scene_properties.auto_range",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$-1/$$1/...##Auto",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties"
       ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+      "notes": "Scene Properties 表第 3 行 Colormap Range Auto 按钮。"
     },
     {
-      "alias": "post.top.annotation_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnAnnotation",
-      "owner": "PostTests",
+      "alias": "post.scene_properties.color_style",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/##ColorStyle",
+      "owner": "Postbug",
       "tags": [
-        "post",
-        "top",
-        "annotation"
+        "colormap",
+        "properties",
+        "color_style"
       ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+      "notes": "Scene Properties 表 Style Setting 行的 Color Style 下拉框。"
     },
     {
-      "alias": "post.top.insitu_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnIn-Situ Post",
-      "owner": "PostTests",
+      "alias": "post.scene_properties.color_style_inferno",
+      "ref": "//##Combo_00/##ColorStyle10/Inferno (matplotlib)",
+      "owner": "Postbug",
       "tags": [
-        "post",
-        "top",
-        "insitu"
+        "colormap",
+        "properties",
+        "color_style"
       ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+      "notes": "Color Style 下拉框中的 Inferno (matplotlib) 选项，位于列表最底部。"
     },
     {
-      "alias": "view.camera.isometric_view",
-      "ref": "//TopPanel/**/##wholeChildBtnIsometric View",
-      "owner": "PostTests",
+      "alias": "post.scene_properties.color_style_viridis",
+      "ref": "//##Combo_00/##ColorStyle11/Viridis (matplotlib)",
+      "owner": "Postbug",
       "tags": [
-        "view",
-        "camera"
+        "colormap",
+        "properties",
+        "color_style"
       ],
-      "notes": "View 页签 Camera/Isometric View；须先 select_view_ribbon_tab()。/**/ 跳过 View##table_* / ##childGroup* 哈希。"
+      "notes": "Color Style 下拉框中的 Viridis (matplotlib) 选项。"
     },
     {
-      "alias": "post.top.adjust_views_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnAdjustViews",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "adjust_views"
-      ],
-      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.top.adjust_views_dropdown",
-      "ref": "//TopPanel/**/##DropDownAdjustViews",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "top",
-        "adjust_views"
-      ]
-    },
-    {
-      "alias": "post.adjust_views.plugin_close",
-      "ref": "//AdjustViews##CustomStatePlugin/",
-      "owner": "PostTests",
-      "tags": [
-        "post",
-        "adjust_views",
-        "plugin"
-      ],
-      "notes": "Plugin title-bar close (same pattern as post.xyplot.plugin_close)."
-    },
-    {
-      "alias": "post.adjust_views.add",
-      "ref": "//AdjustViews##CustomStatePlugin/ContentTable/Add",
-      "owner": "Postbug",
-      "tags": [
-        "adjust_views"
-      ]
-    },
-    {
-      "alias": "post.adjust_views.clear_all",
-      "ref": "//AdjustViews##CustomStatePlugin/ContentTable/Clear All",
-      "owner": "Postbug",
-      "tags": [
-        "adjust_views"
-      ]
-    },
-    {
-      "alias": "post.adjust_views.name_1",
-      "ref": "//AdjustViews##CustomStatePlugin/**/$$1/##Name1",
-      "owner": "Postbug",
-      "tags": [
-        "adjust_views"
-      ],
-      "notes": "CameraListView 第 1 行 View Point Name（PushID 1 + ##Name1）；Add 后新视点行号与已有行数一致时用此 alias。"
-    },
-    {
-      "alias": "post.contour.combo_quantity",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox1_AC250586/Quantity",
-      "owner": "PostTests",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.contour.input_generate_number",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Generate Number/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.contour.apply",
-      "ref": "//Contour##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.contour.exit",
-      "ref": "//Contour##CustomStatePlugin/ContentTable/Exit",
-      "owner": "Postbug",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.contour.source_text",
-      "ref": "//Contour##CustomStatePlugin/ContentTable/##SourceText",
-      "owner": "Postbug",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.quickaccess.fit_data",
-      "ref": "//QuickAccess/**/##wholeChildBtnFit data",
-      "owner": "PostTests",
-      "tags": [
-        "quickaccess"
-      ],
-      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.quickaccess.show_by_fluid",
-      "ref": "//QuickAccess/**/##wholeChildBtnShow By Fluid",
-      "owner": "PostTests",
-      "tags": [
-        "quickaccess",
-        "contour"
-      ],
-      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.contour.combo_multi_mode",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Multi Mode",
-      "owner": "PostTests",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.contour.import_datasource",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Import DataSource",
-      "owner": "PostTests",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.contour.export_datasource",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox2_BF75F672/Export DataSource",
-      "owner": "Postbug",
-      "tags": [
-        "contour"
-      ]
-    },
-    {
-      "alias": "post.contour.roweditor_plus",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child2RowEditor_00D65A59/+",
-      "owner": "PostTests",
-      "tags": [
-        "contour",
-        "roweditor"
-      ]
-    },
-    {
-      "alias": "post.contour.roweditor_edit_r0",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child1RowEditor_58C0A047/##RowEditor/$$0/##edit",
-      "owner": "Postbug",
-      "tags": [
-        "contour",
-        "roweditor"
-      ]
-    },
-    {
-      "alias": "post.contour.roweditor_edit_r1",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child1RowEditor_58C0A047/##RowEditor/$$1/##edit",
-      "owner": "PostTests",
-      "tags": [
-        "contour",
-        "roweditor"
-      ]
-    },
-    {
-      "alias": "post.contour.roweditor_edit_r2",
-      "ref": "//Contour##CustomStatePlugin\\/##CustomGroupBox3_4D1E7571\\/##Child1RowEditor_58C0A047/##RowEditor/$$2/##edit",
-      "owner": "Postbug",
-      "tags": [
-        "contour",
-        "roweditor"
-      ]
-    },
-    {
-      "alias": "post.contour.combo_import_file_item",
-      "ref": "//##Combo_00/Multi Mode1/ImportFile",
-      "owner": "PostTests",
-      "tags": [
-        "contour",
-        "combo"
-      ]
-    },
-    {
-      "alias": "post.dialog.open_file_input",
-      "ref": "//Open a file###OpenFileDialog/##file_input",
-      "owner": "PostTests",
-      "tags": [
-        "dialog"
-      ]
-    },
-    {
-      "alias": "post.dialog.save_file_input",
-      "ref": "//Save a file###SaveFileDialog/##file_input",
-      "owner": "Postbug",
-      "tags": [
-        "dialog"
-      ]
-    },
-    {
-      "alias": "post.dialog.save_button",
-      "ref": "//Save a file###SaveFileDialog/Save",
-      "owner": "Postbug",
-      "tags": [
-        "dialog"
-      ]
-    },
-    {
-      "alias": "post.top.calculator_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnCalculator",
-      "owner": "PostTests",
-      "tags": [
-        "calculator"
-      ]
-    },
-    {
-      "alias": "post.top.repetition_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnRepetition",
-      "owner": "PostTests",
-      "tags": [
-        "repetition",
-        "top"
-      ]
-    },
-    {
-      "alias": "post.top.reports_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnReports",
-      "owner": "PostTests",
-      "tags": [
-        "reports",
-        "top"
-      ]
-    },
-    {
-      "alias": "post.reports.apply",
-      "ref": "//Reports##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "reports",
-        "post"
-      ]
-    },
-    {
-      "alias": "post.reports.exit",
-      "ref": "//Reports##CustomStatePlugin/ContentTable/Exit",
-      "owner": "PostTests",
-      "tags": [
-        "reports",
-        "post"
-      ]
-    },
-    {
-      "alias": "post.reports.option_combo",
-      "ref": "//Reports##CustomStatePlugin\\/##ReportSetting_54219553/Option",
-      "owner": "Postbug",
-      "tags": [
-        "reports",
-        "option",
-        "combo"
-      ],
-      "notes": "Reports 面板下的 Option 下拉框。"
-    },
-    {
-      "alias": "post.reports.field_variable_combo",
-      "ref": "//Reports##CustomStatePlugin\\/##ReportSetting_54219553/Field Variable",
-      "owner": "Postbug",
-      "tags": [
-        "reports",
-        "field_variable",
-        "combo"
-      ],
-      "notes": "Reports 面板下的 Field Variable 下拉框。"
-    },
-    {
-      "alias": "post.reports.option_average",
-      "ref": "//##Combo_00/Option2/Average",
-      "owner": "Postbug",
-      "tags": [
-        "reports",
-        "option",
-        "average"
-      ],
-      "notes": "Option 下拉框中的 Average 选项（Combo 弹出项，item_click 可能不可靠，优先用 combo_click）。"
-    },
-    {
-      "alias": "post.reports.field_variable_temperature",
-      "ref": "//##Combo_00/Field Variable2/Temperature",
-      "owner": "Postbug",
-      "tags": [
-        "reports",
-        "field_variable",
-        "temperature"
-      ],
-      "notes": "Field Variable 下拉框中的 Temperature 选项（Combo 弹出项）。"
-    },
-    {
-      "alias": "post.calculator.add_btn",
-      "ref": "//Calculator##CustomStatePlugin\\/##Quick Settings_89269D63/##table1/$$0/$$2/Add",
-      "owner": "PostTests",
-      "tags": [
-        "calculator"
-      ]
-    },
-    {
-      "alias": "post.calculator.apply",
-      "ref": "//Calculator##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "calculator"
-      ]
-    },
-    {
-      "alias": "post.ribbon.mesh_calc_result",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_Calculator1",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon"
-      ]
-    },
-    {
-      "alias": "post.ribbon.scene_result_combo",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$-1/$$1/##value",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon"
-      ]
-    },
-    {
-      "alias": "post.scene.properties_scroll",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140",
+      "alias": "post.scene_properties.colormap_pressure",
+      "ref": "//##Combo_00/2/Pressure",
       "owner": "Postbug",
       "tags": [
         "scene",
-        "axes_grid"
+        "colormap"
       ],
-      "notes": "Scene Properties 面板滚动区；ScrollToBottom 会拖 #SCROLLY 到底部以露出 Advanced Options。"
+      "notes": "Color Map 下拉菜单中的 Pressure 选项。"
+    },
+    {
+      "alias": "post.scene_properties.density",
+      "ref": "//##Combo_00/$$1/Density",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties"
+      ]
+    },
+    {
+      "alias": "post.scene_properties.editor_launch",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/...##button",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties"
+      ],
+      "notes": "Style Setting 表第 3 行 Interpolation 旁 ...##button（非 Color Style 行）。p0_colormap_2 稳定 ref 同此路径。"
+    },
+    {
+      "alias": "post.scene_properties.value_cell",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$-1/$$1/##value",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties"
+      ]
+    },
+    {
+      "alias": "post.scene_properties.value_range_max",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/##Max",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties",
+        "value_range"
+      ],
+      "notes": "Scene Properties 表 Value Range 的 Max 输入框。"
+    },
+    {
+      "alias": "post.scene_properties.value_range_min",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/##Min",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties",
+        "value_range"
+      ],
+      "notes": "Scene Properties 表 Value Range 的 Min 输入框。"
+    },
+    {
+      "alias": "post.scene_tree.popup_delete",
+      "ref": "//##Popup_18d95aa7/Delete",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "popup"
+      ],
+      "notes": "场景树右键 Delete；##Popup 哈希随会话变化，失败时用 ID Stack 更新 ref。"
+    },
+    {
+      "alias": "post.scene_tree.select_bcid_11",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_6_bcid_11",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "ribbon"
+      ],
+      "notes": "##SelectBtn 前序号随树变化，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.scene_tree.select_bcid_12",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_7_bcid_12",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "ribbon"
+      ]
+    },
+    {
+      "alias": "post.scene_tree.select_multiplane1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_MultiPlane1",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "multiplane"
+      ]
+    },
+    {
+      "alias": "post.scene_tree.select_plot_over_line1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_PlotOverLine1",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "plot_over_line"
+      ]
+    },
+    {
+      "alias": "post.scene_tree.select_plot_over_line2",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_10_PlotOverLine2",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "plot_over_line"
+      ]
+    },
+    {
+      "alias": "post.scene_tree.vis_bcid_11",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox6_bcid_11",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "ribbon"
+      ]
+    },
+    {
+      "alias": "post.scene_tree.vis_multiplane1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox19_MultiPlane1",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "multiplane"
+      ]
+    },
+    {
+      "alias": "post.scene_tree.vis_multiplane9",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_MultiPlane1",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
+        "multiplane"
+      ]
     },
     {
       "alias": "post.scene.advanced_options",
@@ -2058,325 +2236,60 @@
       "notes": "Scene Properties → Advanced Options → Data Axes Grid Edit 按钮（图一）。"
     },
     {
-      "alias": "post.axes_grid.x_use_custom_bounds",
-      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2/X Axis Use Custom Bounds",
+      "alias": "post.scene.lighting.add",
+      "ref": "//RibbonScene/##MainTabs/Lighting/##table1/$$2/$$1/Add",
       "owner": "Postbug",
       "tags": [
-        "axes_grid"
+        "lighting"
       ]
     },
     {
-      "alias": "post.axes_grid.y_use_custom_bounds",
-      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA/Y Axis Use Custom Bounds",
+      "alias": "post.scene.lighting.light_edit",
+      "ref": "//RibbonScene/##MainTabs/Lighting/##table1/$$3/$$1/...##lightEdit",
       "owner": "Postbug",
       "tags": [
-        "axes_grid"
-      ],
-      "notes": "与 x_use_custom_bounds 同结构；哈希与 y_edit_* 的 GroupBox 一致。"
-    },
-    {
-      "alias": "post.axes_grid.z_use_custom_bounds",
-      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2/Z Axis Use Custom Bounds",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "与 x_use_custom_bounds 同结构；哈希与 z_edit_* 的 GroupBox 一致。"
-    },
-    {
-      "alias": "post.axes_grid.x_plus",
-      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2\\/##Child2##m_Axeseditor1_78E5E346/+",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
+        "lighting"
       ]
     },
     {
-      "alias": "post.axes_grid.y_plus",
-      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA/**/+",
+      "alias": "post.scene.lighting.remove",
+      "ref": "//RibbonScene/##MainTabs/Lighting/##table1/$$2/$$1/Remove",
       "owner": "Postbug",
       "tags": [
-        "axes_grid"
-      ],
-      "notes": "右侧 + 在 Child2##m_Axeseditor2_*；有 ID Stack 全路径时改为与 x_plus 同级的 ##Child2##m_Axeseditor2_<hash>/+。"
+        "lighting"
+      ]
     },
     {
-      "alias": "post.axes_grid.z_plus",
-      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2/**/+",
+      "alias": "post.scene.main_tabs.lighting",
+      "ref": "//RibbonScene/##MainTabs/Lighting",
       "owner": "Postbug",
       "tags": [
-        "axes_grid"
-      ],
-      "notes": "同 y_plus；GroupBox 哈希与 z_edit_* 一致。"
+        "lighting",
+        "scene"
+      ]
     },
     {
-      "alias": "post.axes_grid.x_edit_0",
-      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2\\/##Child1##m_Axeseditor1_6B1D83B5/####m_Axeseditor1/$$0/##edit",
+      "alias": "post.scene.main_tabs.properties",
+      "ref": "//RibbonScene/##MainTabs/Properties",
       "owner": "Postbug",
       "tags": [
+        "scene",
+        "properties"
+      ]
+    },
+    {
+      "alias": "post.scene.properties_scroll",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140",
+      "owner": "Postbug",
+      "tags": [
+        "scene",
         "axes_grid"
       ],
-      "notes": "X 轴列表区 Child1 第 0 行 InputFloat（ID Stack: .../$$0/##edit）。"
+      "notes": "Scene Properties 面板滚动区；ScrollToBottom 会拖 #SCROLLY 到底部以露出 Advanced Options。"
     },
     {
-      "alias": "post.axes_grid.x_edit_1",
-      "ref": "//Data Axes Grid Edit\\/##X Axis Label Properties_EC3CC5D2\\/##Child1##m_Axeseditor1_6B1D83B5/####m_Axeseditor1/$$1/##edit",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "X 轴列表区 Child1 第 1 行 InputFloat。"
-    },
-    {
-      "alias": "post.axes_grid.y_edit_0",
-      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA\\/##Child1##m_Axeseditor2_20AF80AA/####m_Axeseditor2/$$0/##edit",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "Y 轴列表区 Child1 第 0 行 InputFloat（与 x_edit_0 同结构）。"
-    },
-    {
-      "alias": "post.axes_grid.y_edit_1",
-      "ref": "//Data Axes Grid Edit\\/##Y Axis Label Properties_99EF35EA\\/##Child1##m_Axeseditor2_20AF80AA/####m_Axeseditor2/$$1/##edit",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "Y 轴列表区 Child1 第 1 行 InputFloat。"
-    },
-    {
-      "alias": "post.axes_grid.z_edit_0",
-      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2\\/##Child1##m_Axeseditor3_608449E7/####m_Axeseditor3/$$0/##edit",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "Z 轴列表区 Child1 第 0 行 InputFloat。"
-    },
-    {
-      "alias": "post.axes_grid.z_edit_1",
-      "ref": "//Data Axes Grid Edit\\/##Z Axis Label Properties_079B25A2\\/##Child1##m_Axeseditor3_608449E7/####m_Axeseditor3/$$1/##edit",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "Z 轴列表区 Child1 第 1 行 InputFloat。"
-    },
-    {
-      "alias": "post.axes_grid.modal",
-      "ref": "//Data Axes Grid Edit",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "弹窗根窗口；NoScrollbar 时仍可用 scroll_to_bottom 滚到 Apply/Reset/Close。"
-    },
-    {
-      "alias": "post.axes_grid.reset",
-      "ref": "//Data Axes Grid Edit/Reset",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ],
-      "notes": "弹窗底部 Reset（非 Bounds 区内小 Reset）。"
-    },
-    {
-      "alias": "post.axes_grid.close",
-      "ref": "//Data Axes Grid Edit/#CLOSE",
-      "owner": "Postbug",
-      "tags": [
-        "axes_grid"
-      ]
-    },
-    {
-      "alias": "post.top.multislice_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnMultiPlane",
-      "owner": "PostTests",
-      "tags": [
-        "multislice"
-      ]
-    },
-    {
-      "alias": "post.multislice.input_number",
-      "ref": "//MultiPlane##CustomStatePlugin/**/Number/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "multislice"
-      ],
-      "notes": "MultiPlane Settings 内 Number 输入框；/**/ 跳过 MultiPlaneSettings_* hash。"
-    },
-    {
-      "alias": "post.multislice.input_offset",
-      "ref": "//MultiPlane##CustomStatePlugin\\/##OffSet_0B6CDFD8/OffSet/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "multislice"
-      ]
-    },
-    {
-      "alias": "post.multislice.combo_plane_mode",
-      "ref": "//MultiPlane##CustomStatePlugin\\/##MultiPlaneSettings_31FB93CD/Plane Mode",
-      "owner": "PostTests",
-      "tags": [
-        "multislice",
-        "combo"
-      ]
-    },
-    {
-      "alias": "post.multislice.picking_plus",
-      "ref": "//MultiPlane##CustomStatePlugin\\/##PickingPoints_BDBE65A0\\/##Child2_PickingPoints_table_27B02227/+",
-      "owner": "PostTests",
-      "tags": [
-        "multislice",
-        "picking"
-      ]
-    },
-    {
-      "alias": "post.multislice.picking_minus",
-      "ref": "//MultiPlane##CustomStatePlugin\\/##PickingPoints_BDBE65A0\\/##Child2_PickingPoints_table_27B02227/-",
-      "owner": "PostTests",
-      "tags": [
-        "multislice",
-        "picking"
-      ]
-    },
-    {
-      "alias": "post.multislice.apply",
-      "ref": "//MultiPlane##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "multislice"
-      ]
-    },
-    {
-      "alias": "post.multislice.plugin_close",
-      "ref": "//MultiPlane##CustomStatePlugin/",
-      "owner": "PostTests",
-      "tags": [
-        "multislice",
-        "plugin"
-      ],
-      "notes": "Plugin title-bar close (same pattern as post.xyplot.plugin_close)."
-    },
-    {
-      "alias": "post.multislice.exit",
-      "ref": "//MultiPlane##CustomStatePlugin/ContentTable/Exit",
-      "owner": "Postbug",
-      "tags": [
-        "multislice"
-      ]
-    },
-    {
-      "alias": "post.multislice.source_text",
-      "ref": "//MultiPlane##CustomStatePlugin/ContentTable/##SourceText",
-      "owner": "Postbug",
-      "tags": [
-        "multislice"
-      ]
-    },
-    {
-      "alias": "post.top.stream_line_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnStream Line",
-      "owner": "PostTests",
-      "tags": [
-        "streamline",
-        "top"
-      ]
-    },
-    {
-      "alias": "post.stream_line.apply",
-      "ref": "//Stream Line##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "streamline",
-        "post"
-      ],
-      "notes": "面板未打开或 Source 无效时 ItemNotFound；用例须先 ribbon_hide_all_and_select_mesh 再开 Stream Line。"
-    },
-    {
-      "alias": "post.stream_line.plugin_window",
-      "ref": "//Stream Line##CustomStatePlugin",
-      "owner": "PostTests",
-      "tags": [
-        "streamline"
-      ]
-    },
-    {
-      "alias": "post.stream_line.combo_seeds",
-      "ref": "//Stream Line##CustomStatePlugin/**/##Seeds Parameters_*/Seeds",
-      "owner": "PostTests",
-      "tags": [
-        "streamline",
-        "combo"
-      ],
-      "notes": "Seeds Setting 区 Seeds（Line/Point）；##Seeds Parameters_* 哈希随构建变化时用 snapshot 更新。"
-    },
-    {
-      "alias": "post.stream_line.combo_vectors",
-      "ref": "//Stream Line##CustomStatePlugin\\/##Type Parameters_99902DF2/Vectors",
-      "owner": "PostTests",
-      "tags": [
-        "streamline",
-        "combo"
-      ],
-      "notes": "StreamLine Type 区 Vectors（SelectInputVectors）；勿展开 Advanced Options（另有 IntegrationDirection 的 Vectors）。"
-    },
-    {
-      "alias": "post.stream_line.combo_interpolator",
-      "ref": "//Stream Line##CustomStatePlugin/**/##Type Parameters_*/Interpolator",
-      "owner": "PostTests",
-      "tags": [
-        "streamline",
-        "combo"
-      ]
-    },
-    {
-      "alias": "post.stream_line.surface_streamlines",
-      "ref": "//Stream Line##CustomStatePlugin\\/##Type Parameters_99902DF2/Surface Streamlines",
-      "owner": "PostTests",
-      "tags": [
-        "streamline"
-      ]
-    },
-    {
-      "alias": "post.stream_line.combo_vectors_velocity_item",
-      "ref": "//##Combo_00/Vectors1/Velocity",
-      "owner": "PostTests",
-      "tags": [
-        "streamline",
-        "combo"
-      ],
-      "notes": "Vectors 弹出层；Vectors1 为 Combo PushID，失败时用 snapshot / ID Stack 更新。"
-    },
-    {
-      "alias": "post.stream_line.advanced_options",
-      "ref": "//Stream Line##CustomStatePlugin/Advanced Options",
-      "owner": "PostTests",
-      "tags": [
-        "streamline"
-      ],
-      "notes": "Advanced Options 折叠头；展开后出现第二组 Vectors（Integration Direction）。"
-    },
-    {
-      "alias": "post.stream_line.exit",
-      "ref": "//Stream Line##CustomStatePlugin/ContentTable/Exit",
-      "owner": "Postbug",
-      "tags": [
-        "streamline"
-      ]
-    },
-    {
-      "alias": "post.stream_line.source_text",
-      "ref": "//Stream Line##CustomStatePlugin/ContentTable/##SourceText",
-      "owner": "Postbug",
-      "tags": [
-        "streamline"
-      ]
-    },
-    {
-      "alias": "post.top.slice_panel",
-      "ref": "//TopPanel/**/##wholeChildBtnSlice",
+      "alias": "post.slice.apply",
+      "ref": "//Slice##CustomStatePlugin/ContentTable/Apply",
       "owner": "PostTests",
       "tags": [
         "slice"
@@ -2391,222 +2304,8 @@
       ]
     },
     {
-      "alias": "post.slice.show_preview",
-      "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Show Preview",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ],
-      "notes": "Slice 面板 Plane Parameters 内 Show Preview。"
-    },
-    {
-      "alias": "post.slice.triangulate",
-      "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Triangulate the slices",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.apply",
-      "ref": "//Slice##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
       "alias": "post.slice.exit",
       "ref": "//Slice##CustomStatePlugin/ContentTable/Exit",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.source_text",
-      "ref": "//Slice##CustomStatePlugin/ContentTable/##SourceText",
-      "owner": "Postbug",
-      "tags": [
-        "slice"
-      ],
-      "notes": "无有效 Source 时显示红色提示（如 Please select valid source from model tree!）。"
-    },
-    {
-      "alias": "post.slice.plugin_window",
-      "ref": "//Slice##CustomStatePlugin",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.z_normal",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox1_5811D913/Z Normal",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_plus",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child2RowEditor_9955B00A/+",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_minus",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child2RowEditor_9955B00A/-",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_x",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child2RowEditor_9955B00A/x",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_scroll_area",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_edit_r1",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$1/##edit",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_edit_r2",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$2/##edit",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_edit_r3",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$3/##edit",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.roweditor_edit_r0",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$0/##edit",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.quickaccess.mesh_shaded_edge",
-      "ref": "//QuickAccess/**/##wholeChildBtnMesh Shaded With Edge",
-      "owner": "PostTests",
-      "tags": [
-        "quickaccess"
-      ],
-      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
-    },
-    {
-      "alias": "post.ribbon.mesh_slice1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_Slice1",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon"
-      ]
-    },
-    {
-      "alias": "post.ribbon.mesh_contour1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_VTKmContour1",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "contour"
-      ],
-      "notes": "Apply 后场景树 Contour1；##SelectBtn 序号随树变化，用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.ribbon.mesh_streamtracer1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_StreamTracer1",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon",
-        "streamline"
-      ]
-    },
-    {
-      "alias": "post.ribbon.vis_slice1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_Slice1",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon"
-      ]
-    },
-    {
-      "alias": "post.ribbon.vis_vol19",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_vol",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon"
-      ]
-    },
-    {
-      "alias": "post.slice.pos_0",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Position/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.pos_1",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Position/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.pos_2",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Position/$$2/##v",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.rot_0",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Rotation/$$0/##v",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.rot_1",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Rotation/$$1/##v",
-      "owner": "PostTests",
-      "tags": [
-        "slice"
-      ]
-    },
-    {
-      "alias": "post.slice.rot_2",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Rotation/$$2/##v",
       "owner": "PostTests",
       "tags": [
         "slice"
@@ -2637,8 +2336,41 @@
       ]
     },
     {
-      "alias": "post.slice.ref_bounds",
-      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox3_B92AA9E4/Use Reference Bounds",
+      "alias": "post.slice.length",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Length/$$0/##v",
+      "owner": "Postbug",
+      "tags": [
+        "slice"
+      ],
+      "notes": "Slice Box 的 Length 输入框。"
+    },
+    {
+      "alias": "post.slice.plugin_window",
+      "ref": "//Slice##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "slice"
+      ]
+    },
+    {
+      "alias": "post.slice.pos_0",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Position/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "slice"
+      ]
+    },
+    {
+      "alias": "post.slice.pos_1",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Position/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "slice"
+      ]
+    },
+    {
+      "alias": "post.slice.pos_2",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Position/$$2/##v",
       "owner": "PostTests",
       "tags": [
         "slice"
@@ -2693,769 +2425,172 @@
       ]
     },
     {
-      "alias": "post.vtk_render_window",
-      "ref": "//##vtkRenderWindow",
-      "owner": "Postbug",
-      "tags": [
-        "vtk",
-        "window",
-        "capture"
-      ],
-      "notes": "VTK 渲染主窗口，可用于 capture_window（SpreadSheet 等无 RenderView1 的场景）。"
-    },
-    {
-      "alias": "post.vtk_render_window.view_type",
-      "ref": "//##vtkRenderWindow/VerticalTabs/",
+      "alias": "post.slice.ref_bounds",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox3_B92AA9E4/Use Reference Bounds",
       "owner": "PostTests",
       "tags": [
-        "vtk",
-        "tabs",
-        "view_type"
+        "slice"
       ]
     },
     {
-      "alias": "post.vtk_render_window.vertical_tabs_close",
-      "ref": "//##vtkRenderWindow/VerticalTabs/",
-      "owner": "Postbug",
-      "tags": [
-        "vtk",
-        "tabs",
-        "close"
-      ],
-      "notes": "VerticalTabs 条上的关闭控件（），用 item_click。勿与 tab_close(Scene #N) 混淆；p0_viewtype_1 用本 alias。"
-    },
-    {
-      "alias": "post.vtk_render_window.vertical_tabs_add_scene",
-      "ref": "//##vtkRenderWindow/VerticalTabs/",
+      "alias": "post.slice.rot_0",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Rotation/$$0/##v",
       "owner": "PostTests",
       "tags": [
-        "vtk",
-        "tabs",
-        "add_scene"
+        "slice"
       ]
     },
     {
-      "alias": "post.vtk_render_window.vertical_tabs_scene2_tab",
-      "ref": "//##vtkRenderWindow/VerticalTabs/Scene #2",
+      "alias": "post.slice.rot_1",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Rotation/$$1/##v",
       "owner": "PostTests",
       "tags": [
-        "vtk",
-        "tabs"
+        "slice"
       ]
     },
     {
-      "alias": "post.xyplot.plugin_close",
-      "ref": "//XYPlot##CustomStatePlugin/",
+      "alias": "post.slice.rot_2",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox2_4B412AE7/Rotation/$$2/##v",
       "owner": "PostTests",
       "tags": [
-        "xyplot",
-        "plugin"
+        "slice"
       ]
     },
     {
-      "alias": "post.quickaccess.xy_plot",
-      "ref": "//QuickAccess/**/##wholeChildBtnXYPlot",
+      "alias": "post.slice.roweditor_edit_r0",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$0/##edit",
       "owner": "PostTests",
       "tags": [
-        "quickaccess",
-        "xyplot"
-      ],
-      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+        "slice"
+      ]
     },
     {
-      "alias": "post.quickaccess.rotation",
-      "ref": "//QuickAccess/**/##wholeChildBtnRotation",
+      "alias": "post.slice.roweditor_edit_r1",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$1/##edit",
       "owner": "PostTests",
       "tags": [
-        "quickaccess",
-        "rotation"
-      ],
-      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+        "slice"
+      ]
     },
     {
-      "alias": "post.quickaccess.measurement",
-      "ref": "//QuickAccess/**/##wholeChildBtnMeasurement",
+      "alias": "post.slice.roweditor_edit_r2",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$2/##edit",
       "owner": "PostTests",
       "tags": [
-        "quickaccess",
-        "measurement"
-      ],
-      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+        "slice"
+      ]
     },
     {
-      "alias": "post.measurement.plugin_close",
-      "ref": "//Measurement##CustomStatePlugin/",
+      "alias": "post.slice.roweditor_edit_r3",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14/##RowEditor/$$3/##edit",
       "owner": "PostTests",
       "tags": [
-        "measurement",
-        "plugin"
-      ],
-      "notes": "Plugin title-bar close (same pattern as post.xyplot.plugin_close)."
-    },
-    {
-      "alias": "post.measurement.point1_x",
-      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$0/##point1_x",
-      "owner": "Postbug",
-      "tags": [
-        "measurement"
-      ],
-      "notes": "ImGuiTestEngine: PushID(0) -> $$0 (ID Stack copy path shows /0/ but tests must use $$0)."
-    },
-    {
-      "alias": "post.measurement.point1_y",
-      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$0/##point1_y",
-      "owner": "Postbug",
-      "tags": [
-        "measurement"
+        "slice"
       ]
     },
     {
-      "alias": "post.measurement.point1_z",
-      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$0/##point1_z",
-      "owner": "Postbug",
-      "tags": [
-        "measurement"
-      ]
-    },
-    {
-      "alias": "post.measurement.point2_x",
-      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$1/##point2_x",
-      "owner": "Postbug",
-      "tags": [
-        "measurement"
-      ]
-    },
-    {
-      "alias": "post.measurement.point2_y",
-      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$1/##point2_y",
-      "owner": "Postbug",
-      "tags": [
-        "measurement"
-      ]
-    },
-    {
-      "alias": "post.measurement.point2_z",
-      "ref": "//Measurement##CustomStatePlugin/ContentTable/##SettingTable/$$1/##point2_z",
-      "owner": "Postbug",
-      "tags": [
-        "measurement"
-      ]
-    },
-    {
-      "alias": "post.line_chart_view2.close",
-      "ref": "//LineChartView2/#CLOSE",
+      "alias": "post.slice.roweditor_minus",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child2RowEditor_9955B00A/-",
       "owner": "PostTests",
       "tags": [
-        "plot",
-        "post"
+        "slice"
       ]
     },
     {
-      "alias": "post.line_chart_view1.close",
-      "ref": "//LineChartView1/#CLOSE",
+      "alias": "post.slice.roweditor_plus",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child2RowEditor_9955B00A/+",
       "owner": "PostTests",
       "tags": [
-        "plot",
-        "post"
+        "slice"
       ]
     },
     {
-      "alias": "post.view_type.render_view",
-      "ref": "//##Popup_a35da901/Render View",
+      "alias": "post.slice.roweditor_scroll_area",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child1RowEditor_C1434A14",
       "owner": "PostTests",
       "tags": [
-        "view",
-        "popup"
+        "slice"
       ]
     },
     {
-      "alias": "post.view_type.plot_view",
-      "ref": "//##Popup_a35da901/Plot View",
+      "alias": "post.slice.roweditor_x",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBoxRowEditor_08307B0A\\/##Child2RowEditor_9955B00A/x",
       "owner": "PostTests",
       "tags": [
-        "view",
-        "popup"
+        "slice"
       ]
     },
     {
-      "alias": "post.view_type.spreadsheet_view",
-      "ref": "//##Popup_cec68140/SpreadSheet View",
+      "alias": "post.slice.show_preview",
+      "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Show Preview",
       "owner": "PostTests",
       "tags": [
-        "view",
-        "popup"
-      ]
+        "slice"
+      ],
+      "notes": "Slice 面板 Plane Parameters 内 Show Preview。"
     },
     {
-      "alias": "post.quickaccess.link_camera",
-      "ref": "//QuickAccess/**/##wholeChildBtnLink Camera",
+      "alias": "post.slice.source_text",
+      "ref": "//Slice##CustomStatePlugin/ContentTable/##SourceText",
+      "owner": "Postbug",
+      "tags": [
+        "slice"
+      ],
+      "notes": "无有效 Source 时显示红色提示（如 Please select valid source from model tree!）。"
+    },
+    {
+      "alias": "post.slice.triangulate",
+      "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Triangulate the slices",
       "owner": "PostTests",
       "tags": [
-        "quickaccess",
-        "camera"
-      ],
-      "notes": "QuickAccess /**/ skips ##childGroup* hash (varies with resolution/DPI)."
+        "slice"
+      ]
     },
     {
-      "alias": "post.link_camera.link",
-      "ref": "//Link Camera##CustomStatePlugin/ContentTable/Link",
+      "alias": "post.slice.z_normal",
+      "ref": "//Slice##CustomStatePlugin\\/##CustomGroupBox1_5811D913/Z Normal",
       "owner": "PostTests",
       "tags": [
-        "camera",
-        "plugin"
+        "slice"
       ]
     },
     {
-      "alias": "post.link_camera.exit",
-      "ref": "//Link Camera##CustomStatePlugin/ContentTable/Exit",
+      "alias": "post.stream_line.advanced_options",
+      "ref": "//Stream Line##CustomStatePlugin/Advanced Options",
       "owner": "PostTests",
       "tags": [
-        "camera",
-        "plugin"
-      ]
-    },
-    {
-      "alias": "post.annotation.apply",
-      "ref": "//Annotation##CustomStatePlugin/ContentTable/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "annotation"
-      ],
-      "notes": "通常无 Process Model 进度条；脚本用 item_click，不用 item_click_apply。"
-    },
-    {
-      "alias": "post.plot_over_line.apply",
-      "ref": "//Plot Over Line##CustomStatePlugin/ContentTable/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "plot_over_line"
-      ]
-    },
-    {
-      "alias": "post.plot_over_line.reselect",
-      "ref": "//Plot Over Line##CustomStatePlugin/ContentTable/Reselect",
-      "owner": "Postbug",
-      "tags": [
-        "plot_over_line"
-      ]
-    },
-    {
-      "alias": "post.repetition.apply",
-      "ref": "//Repetition##CustomStatePlugin/ContentTable/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "repetition"
-      ]
-    },
-    {
-      "alias": "post.insitu.exit",
-      "ref": "//In-Situ Post##CustomStatePlugin/ContentTable/Exit",
-      "owner": "Postbug",
-      "tags": [
-        "insitu"
-      ]
-    },
-    {
-      "alias": "post.scene_tree.select_bcid_11",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_6_bcid_11",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "ribbon"
-      ],
-      "notes": "##SelectBtn 前序号随树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.scene_tree.select_bcid_12",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_7_bcid_12",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "ribbon"
-      ]
-    },
-    {
-      "alias": "post.scene_tree.select_plot_over_line1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_PlotOverLine1",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "plot_over_line"
-      ]
-    },
-    {
-      "alias": "post.scene_tree.select_plot_over_line2",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_10_PlotOverLine2",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "plot_over_line"
-      ]
-    },
-    {
-      "alias": "post.scene_tree.select_multiplane1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_9_MultiPlane1",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "multiplane"
-      ]
-    },
-    {
-      "alias": "post.scene_tree.vis_bcid_11",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox6_bcid_11",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "ribbon"
-      ]
-    },
-    {
-      "alias": "post.scene_properties.value_cell",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$-1/$$1/##value",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties"
-      ]
-    },
-    {
-      "alias": "post.scene_properties.auto_range",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$-1/$$1/...##Auto",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties"
-      ],
-      "notes": "Scene Properties 表第 3 行 Colormap Range Auto 按钮。"
-    },
-    {
-      "alias": "post.scene_properties.value_range_min",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/##Min",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties",
-        "value_range"
-      ],
-      "notes": "Scene Properties 表 Value Range 的 Min 输入框。"
-    },
-    {
-      "alias": "post.scene_properties.value_range_max",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/##Max",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties",
-        "value_range"
-      ],
-      "notes": "Scene Properties 表 Value Range 的 Max 输入框。"
-    },
-    {
-      "alias": "post.scene_properties.density",
-      "ref": "//##Combo_00/$$1/Density",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties"
-      ]
-    },
-    {
-      "alias": "post.scene_properties.editor_launch",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/...##button",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties"
-      ],
-      "notes": "Style Setting 表第 3 行 Interpolation 旁 ...##button（非 Color Style 行）。p0_colormap_2 稳定 ref 同此路径。"
-    },
-    {
-      "alias": "post.scene_properties.color_style",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/##ColorStyle",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties",
-        "color_style"
-      ],
-      "notes": "Scene Properties 表 Style Setting 行的 Color Style 下拉框。"
-    },
-    {
-      "alias": "post.scene_properties.color_style_inferno",
-      "ref": "//##Combo_00/##ColorStyle10/Inferno (matplotlib)",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties",
-        "color_style"
-      ],
-      "notes": "Color Style 下拉框中的 Inferno (matplotlib) 选项，位于列表最底部。"
-    },
-    {
-      "alias": "post.scene_properties.color_style_viridis",
-      "ref": "//##Combo_00/##ColorStyle11/Viridis (matplotlib)",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "properties",
-        "color_style"
-      ],
-      "notes": "Color Style 下拉框中的 Viridis (matplotlib) 选项。"
-    },
-    {
-      "alias": "post.colormap.editor_table_button",
-      "ref": "//##Popup_e053fed4/##ColorMapEditerTable/$$0/$$1/...##button",
-      "owner": "Postbug",
-      "tags": [
-        "colormap",
-        "popup"
-      ],
-      "notes": "Color Map Editer 弹窗内 ...##button；ID Stack 可能显示 /0/1/ 与 $$0/$$1 等价。##Popup 哈希随会话变，与 p0_colormap_2 稳定 ref 保持一致再登记。"
-    },
-    {
-      "alias": "post.colormap.advanced_collapse",
-      "ref": "//Advanced Color Map Editer/#COLLAPSE",
-      "owner": "Postbug",
-      "tags": [
-        "colormap"
-      ]
-    },
-    {
-      "alias": "post.view_type.render_view_popup_alt",
-      "ref": "//##Popup_cec68140/Render View",
-      "owner": "Postbug",
-      "tags": [
-        "view",
-        "popup"
-      ],
-      "notes": "与 post.view_type.render_view 不同 Popup 实例哈希。"
-    },
-    {
-      "alias": "post.scene.main_tabs.lighting",
-      "ref": "//RibbonScene/##MainTabs/Lighting",
-      "owner": "Postbug",
-      "tags": [
-        "lighting",
-        "scene"
-      ]
-    },
-    {
-      "alias": "post.scene.lighting.add",
-      "ref": "//RibbonScene/##MainTabs/Lighting/##table1/$$2/$$1/Add",
-      "owner": "Postbug",
-      "tags": [
-        "lighting"
-      ]
-    },
-    {
-      "alias": "post.scene.lighting.remove",
-      "ref": "//RibbonScene/##MainTabs/Lighting/##table1/$$2/$$1/Remove",
-      "owner": "Postbug",
-      "tags": [
-        "lighting"
-      ]
-    },
-    {
-      "alias": "post.scene.lighting.light_edit",
-      "ref": "//RibbonScene/##MainTabs/Lighting/##table1/$$3/$$1/...##lightEdit",
-      "owner": "Postbug",
-      "tags": [
-        "lighting"
-      ]
-    },
-    {
-      "alias": "post.scene.main_tabs.properties",
-      "ref": "//RibbonScene/##MainTabs/Properties",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "properties"
-      ]
-    },
-    {
-      "alias": "post.vtk_render_window.vertical_tabs_scene1_tab",
-      "ref": "//##vtkRenderWindow/VerticalTabs/Scene #1",
-      "owner": "Postbug",
-      "tags": [
-        "vtk",
-        "tabs"
-      ],
-      "notes": "配合 ui.tab_close 关闭指定 Scene 页签。"
-    },
-    {
-      "alias": "post.multiplane.show_preview",
-      "ref": "//MultiPlane##CustomStatePlugin\\/##MultiPlaneSettings_31FB93CD/Show Preview",
-      "owner": "PostTests",
-      "tags": [
-        "multiplane"
-      ],
-      "notes": "MultiPlane 面板 MultiPlaneSettings 内 Show Preview。"
-    },
-    {
-      "alias": "post.xyplot.plot_setting",
-      "ref": "//XYPlot##CustomStatePlugin/ContentTable/Plot Setting",
-      "owner": "PostTests",
-      "tags": [
-        "xyplot"
-      ],
-      "notes": "XYPlot ContentTable 内 Plot Setting 折叠区标题。"
-    },
-    {
-      "alias": "post.xyplot.plugin_window",
-      "ref": "//XYPlot##CustomStatePlugin",
-      "owner": "PostTests",
-      "tags": [
-        "xyplot",
-        "plugin"
-      ]
-    },
-    {
-      "alias": "post.xyplot.attr_check_0",
-      "ref": "//XYPlot##CustomStatePlugin/**/##AttrInfoTable/$$0/##CheckAttr",
-      "owner": "PostTests",
-      "tags": [
-        "xyplot"
-      ],
-      "notes": "XYPlot 属性列表第 1 行 CheckAttr；ID Stack copy path 的 /0/ 在测试路径中写作 $$0。"
-    },
-    {
-      "alias": "post.xyplot.setting_table_r2_c1",
-      "ref": "//XYPlot##CustomStatePlugin/**/##SettingTable/$$2/$$1",
-      "owner": "PostTests",
-      "tags": [
-        "xyplot"
-      ],
-      "notes": "XYPlot SettingTable 第 3 行第 2 列；ID Stack copy path 的 /2/1 在测试路径中写作 $$2/$$1。"
-    },
-    {
-      "alias": "post.ribbon.mesh_table_fft1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_4_TableFFT1",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon",
-        "fft"
-      ],
-      "notes": "CSV/FFT 导入后的 TableFFT1 场景树选择按钮；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.ribbon.vis_table_fft1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_TableFFT1",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon",
-        "fft"
-      ],
-      "notes": "CSV/FFT 导入后的 TableFFT1 可见性勾选框；##VisibilityCheckbox 前序号随场景树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.ribbon.mesh_select_fft_test_random_signal",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_fft_test_random_signal",
-      "owner": "PostTests",
-      "tags": [
-        "ribbon",
-        "mesh",
-        "fft"
-      ],
-      "notes": "CSV 导入后的 fft_test_random_signal 节点；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.fft.apply",
-      "ref": "//FFT##CustomStatePlugin/ContentTable/Apply",
-      "owner": "PostTests",
-      "tags": [
-        "fft"
-      ]
-    },
-    {
-      "alias": "post.popup.colormap_editor.table_button",
-      "ref": "//##Popup_e053fed4/##ColorMapEditerTable/$$0/$$1/...##button",
-      "owner": "Postbug",
-      "tags": [
-        "popup",
-        "colormap",
-        "button"
-      ],
-      "notes": "Popup 弹窗中 ColorMapEditerTable 表格第 0 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
-    },
-    {
-      "alias": "post.ribbonscene.meshes.visibility_checkbox_volume",
-      "ref": "//RibbonScene/**/##VisibilityCheckbox4_vol",
-      "owner": "Postbug",
-      "tags": [
-        "ribbonscene",
-        "meshes",
-        "volume",
-        "visibility"
-      ],
-      "notes": "RibbonScene 中 Meshes 面板的 Volume 可见性勾选框；定位路径为 Meshes_8900099D 下的 ##VisibilityCheckbox4_vol。"
-    },
-    {
-      "alias": "post.ribbonscene.scene_properties.table_button",
-      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/...##button",
-      "owner": "Postbug",
-      "tags": [
-        "ribbonscene",
-        "scene_properties",
-        "button"
-      ],
-      "notes": "RibbonScene 中 Scene Properties 面板 table1 表格第 2 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
-    },
-    {
-      "alias": "post.quickaccess.show_by_volume",
-      "ref": "//QuickAccess/**/##wholeChildBtnShow By Volume",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "volume"
-      ],
-      "notes": "QuickAccess Show By Volume 按钮；使用 /**/ 跳过 ##childGroupShow By Volume_* 哈希。"
-    },
-    {
-      "alias": "post.ribbon.mesh_select_vki59_vol_k2_1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_5_VKI59_vol_K2_1",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "mesh",
-        "vki59"
-      ],
-      "notes": "vki_59_demo 新模型的 vol 网格选中按钮。"
-    },
-    {
-      "alias": "post.ribbon.mesh_select_vki59_vol_k2",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_VKI59_vol_K2",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "mesh",
-        "vtu"
-      ],
-      "notes": "VKI59 VTU 导入后的场景树网格节点；##SelectBtn 序号随树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.ribbon.vis_vki59",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_vol",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "mesh",
-        "vtu"
-      ],
-      "notes": "dmh 模型导入后的 Volume 可见性勾选框；##VisibilityCheckbox 序号随树变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.ribbon.vis_fft_random_signal",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox3_fft_test_random_signal",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
-        "fft"
-      ],
-      "notes": "FFT CSV 导入后的 fft_test_random_signal 可见性勾选框；##VisibilityCheckbox 序号随树变化。"
-    },
-    {
-      "alias": "post.resample.apply",
-      "ref": "//Resample##CustomStatePlugin/ContentTable/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "resample"
-      ]
-    },
-    {
-      "alias": "post.renderview2",
-      "ref": "//RenderView2",
-      "owner": "PostTests",
-      "tags": [
-        "viewport",
-        "capture"
-      ]
-    },
-    {
-      "alias": "post.reports.option",
-      "ref": "//Reports##CustomStatePlugin/**/Option",
-      "owner": "Postbug",
-      "tags": [
-        "reports"
-      ],
-      "notes": "Report Setting 内 Option 下拉；/**/ 跳过 ##ReportSetting_* 哈希。"
-    },
-    {
-      "alias": "post.reports.option_maximum",
-      "ref": "//##Combo_00/Option1/Maximum",
-      "owner": "Postbug",
-      "tags": [
-        "reports",
-        "combo"
-      ],
-      "notes": "Option 下拉弹出项 Maximum；Option1 为 Combo PushID。"
-    },
-    {
-      "alias": "post.calculator.function_edit",
-      "ref": "//Calculator##CustomStatePlugin\\/##Function Parameters_9252B66A\\/##Text Editor_C493B56F\\/TextEditor_B2E5042A/#SCROLLX",
-      "owner": "Postbug",
-      "tags": [
-        "calculator"
-      ],
-      "notes": "Function Parameters 内的文本编辑器（全路径含 SCROLLX；哈希变化时用 ID Stack 更新）。"
-    },
-    {
-      "alias": "post.quickaccess.forward",
-      "ref": "//QuickAccess\\/##childGroupForward_D17E3F27/##wholeChildBtnForward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "animation"
-      ],
-      "notes": "动画前进按钮；##childGroupForward 哈希随 DPI 变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.quickaccess.backward",
-      "ref": "//QuickAccess\\/##childGroupBackward_7ECA1189/##wholeChildBtnBackward",
-      "owner": "Postbug",
-      "tags": [
-        "quickaccess",
-        "animation"
-      ],
-      "notes": "动画后退按钮；##childGroupBackward 哈希随 DPI 变化，失败时用 ID Stack 更新。"
-    },
-    {
-      "alias": "post.scene_tree.vis_multiplane1",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox19_MultiPlane1",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "multiplane"
-      ]
-    },
-    {
-      "alias": "post.scene_tree.vis_multiplane9",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_MultiPlane1",
-      "owner": "Postbug",
-      "tags": [
-        "scene",
-        "multiplane"
-      ]
-    },
-    {
-      "alias": "post.ribbon.mesh_streamtracer1_vki59",
-      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_4_StreamTracer1",
-      "owner": "Postbug",
-      "tags": [
-        "ribbon",
         "streamline"
       ],
-      "notes": "VKI59 StreamTracer apply 后场景树节点；##SelectBtn 序号随树变化。"
+      "notes": "Advanced Options 折叠头；展开后出现第二组 Vectors（Integration Direction）。"
     },
     {
-      "alias": "post.stream_line.combo_seeds_pointsource",
-      "ref": "//##Combo_00/Seeds1/PointSource",
-      "owner": "Postbug",
+      "alias": "post.stream_line.apply",
+      "ref": "//Stream Line##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "streamline",
+        "post"
+      ],
+      "notes": "面板未打开或 Source 无效时 ItemNotFound；用例须先 ribbon_hide_all_and_select_mesh 再开 Stream Line。"
+    },
+    {
+      "alias": "post.stream_line.combo_interpolator",
+      "ref": "//Stream Line##CustomStatePlugin/**/##Type Parameters_*/Interpolator",
+      "owner": "PostTests",
+      "tags": [
+        "streamline",
+        "combo"
+      ]
+    },
+    {
+      "alias": "post.stream_line.combo_seeds",
+      "ref": "//Stream Line##CustomStatePlugin/**/##Seeds Parameters_*/Seeds",
+      "owner": "PostTests",
       "tags": [
         "streamline",
         "combo"
       ],
-      "notes": "Seeds 下拉弹出项 PointSource；Seeds1 为 Combo PushID，失败时用 snapshot 更新。"
+      "notes": "Seeds Setting 区 Seeds（Line/Point）；##Seeds Parameters_* 哈希随构建变化时用 snapshot 更新。"
     },
     {
       "alias": "post.stream_line.combo_seeds_cylinderpointsource",
@@ -3478,13 +2613,919 @@
       "notes": "Seeds 下拉弹出项 High Res Line Source；Seeds1 为 Combo PushID，失败时用 snapshot 更新。"
     },
     {
-      "alias": "post.particle_tracer.show_cylinder",
-      "ref": "//Particle Tracer##CustomStatePlugin/ContentTable/##ParticleTable/$$-1/$$1/##ShowCylinder",
+      "alias": "post.stream_line.combo_seeds_pointsource",
+      "ref": "//##Combo_00/Seeds1/PointSource",
       "owner": "Postbug",
       "tags": [
+        "streamline",
+        "combo"
+      ],
+      "notes": "Seeds 下拉弹出项 PointSource；Seeds1 为 Combo PushID，失败时用 snapshot 更新。"
+    },
+    {
+      "alias": "post.stream_line.combo_vectors",
+      "ref": "//Stream Line##CustomStatePlugin\\/##Type Parameters_99902DF2/Vectors",
+      "owner": "PostTests",
+      "tags": [
+        "streamline",
+        "combo"
+      ],
+      "notes": "StreamLine Type 区 Vectors（SelectInputVectors）；勿展开 Advanced Options（另有 IntegrationDirection 的 Vectors）。"
+    },
+    {
+      "alias": "post.stream_line.combo_vectors_velocity_item",
+      "ref": "//##Combo_00/Vectors1/Velocity",
+      "owner": "PostTests",
+      "tags": [
+        "streamline",
+        "combo"
+      ],
+      "notes": "Vectors 弹出层；Vectors1 为 Combo PushID，失败时用 snapshot / ID Stack 更新。"
+    },
+    {
+      "alias": "post.stream_line.exit",
+      "ref": "//Stream Line##CustomStatePlugin/ContentTable/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "streamline"
+      ]
+    },
+    {
+      "alias": "post.stream_line.plugin_window",
+      "ref": "//Stream Line##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "streamline"
+      ]
+    },
+    {
+      "alias": "post.stream_line.source_text",
+      "ref": "//Stream Line##CustomStatePlugin/ContentTable/##SourceText",
+      "owner": "Postbug",
+      "tags": [
+        "streamline"
+      ]
+    },
+    {
+      "alias": "post.stream_line.surface_streamlines",
+      "ref": "//Stream Line##CustomStatePlugin\\/##Type Parameters_99902DF2/Surface Streamlines",
+      "owner": "PostTests",
+      "tags": [
+        "streamline"
+      ]
+    },
+    {
+      "alias": "post.threshold.all_scalars",
+      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox2_758CEC8F/All Scalars",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ],
+      "notes": "Interactivity Controls 区；##CustomGroupBox2_* 哈希随构建变化时用 snapshot 更新。"
+    },
+    {
+      "alias": "post.threshold.apply",
+      "ref": "//Threshold##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ]
+    },
+    {
+      "alias": "post.threshold.combo_method",
+      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Threshold Method",
+      "owner": "PostTests",
+      "tags": [
+        "threshold",
+        "combo"
+      ],
+      "notes": "Between / Below Lower Threshold / Above Upper Threshold。"
+    },
+    {
+      "alias": "post.threshold.combo_scalars",
+      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Scalars",
+      "owner": "PostTests",
+      "tags": [
+        "threshold",
+        "combo"
+      ],
+      "notes": "Scalar Setting 区 Scalars；CustomStatePlugin 与 GroupBox 之间须 \\/（与 ID Stack / snapshot 一致）。"
+    },
+    {
+      "alias": "post.threshold.exit",
+      "ref": "//Threshold##CustomStatePlugin/ContentTable/Exit",
+      "owner": "Postbug",
+      "tags": [
+        "threshold"
+      ]
+    },
+    {
+      "alias": "post.threshold.invert",
+      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox2_758CEC8F/Invert",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ],
+      "notes": "Interactivity Controls 最下一行；面板需 scroll_to_bottom(plugin_window) 后可见。"
+    },
+    {
+      "alias": "post.threshold.lower",
+      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Lower Threshold/##InputValue",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ],
+      "notes": "GroupSliderAndInput PushID(Lower Threshold) → ##InputValue；勿用裸 ##InputValue（与 Upper 冲突）。"
+    },
+    {
+      "alias": "post.threshold.plugin_window",
+      "ref": "//Threshold##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ]
+    },
+    {
+      "alias": "post.threshold.source_text",
+      "ref": "//Threshold##CustomStatePlugin/##SourceText",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ]
+    },
+    {
+      "alias": "post.threshold.upper",
+      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox1_66DC1F7B/Upper Threshold/##InputValue",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ],
+      "notes": "GroupSliderAndInput PushID(Upper Threshold) → ##InputValue。"
+    },
+    {
+      "alias": "post.threshold.use_continuous_cell_range",
+      "ref": "//Threshold##CustomStatePlugin\\/##CustomGroupBox2_758CEC8F/Use Continuous Cell Range",
+      "owner": "PostTests",
+      "tags": [
+        "threshold"
+      ]
+    },
+    {
+      "alias": "post.top.adjust_views_dropdown",
+      "ref": "//TopPanel/**/##DropDownAdjustViews",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "adjust_views"
+      ]
+    },
+    {
+      "alias": "post.top.adjust_views_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnAdjustViews",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "adjust_views"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.aero_acoustics_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnAeroAcoustics",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "aero_acoustics"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.annotation_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnAnnotation",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "annotation"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.blade_loading_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnBlade Loading",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "blade_loading"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.blade_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnBlade",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "blade"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.calculator_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnCalculator",
+      "owner": "PostTests",
+      "tags": [
+        "calculator"
+      ]
+    },
+    {
+      "alias": "post.top.clip_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnClip",
+      "owner": "PostTests",
+      "tags": [
+        "top",
+        "clip"
+      ]
+    },
+    {
+      "alias": "post.top.contour_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnContour",
+      "owner": "PostTests",
+      "tags": [
+        "contour"
+      ],
+      "notes": "Wildcard skips Post##table_* / ##SmallSet* / ##childGroupContour_* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.export_usd",
+      "ref": "//TopPanel/**/##wholeChildBtnExport USD",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "file"
+      ]
+    },
+    {
+      "alias": "post.top.fft_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnFFT",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "fft"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.glyph_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnGlyph",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "glyph"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.hub_to_shroud_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnHub To Shroud",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "hub_to_shroud"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.hub_to_shroud_panel_exact",
+      "ref": "//TopPanel\\/Post##table_8D1CB68C\\/##SmallSetBlade Loading_8BC6199F\\/##childGroupHub To Shroud_8B039258/##wholeChildBtnHub To Shroud",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "hub_to_shroud"
+      ],
+      "notes": "Hub To Shroud 精确路径（嵌套在 Blade Loading 分组下）；通配符版本见 post.top.hub_to_shroud_panel。"
+    },
+    {
+      "alias": "post.top.insitu_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnIn-Situ Post",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "insitu"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.macro_dropdown",
+      "ref": "//TopPanel/**/##DropDownMacro",
+      "owner": "Postbug",
+      "tags": [
+        "post",
+        "top",
+        "macro"
+      ]
+    },
+    {
+      "alias": "post.top.macro_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnMacro",
+      "owner": "Postbug",
+      "tags": [
+        "post",
+        "top",
+        "macro"
+      ]
+    },
+    {
+      "alias": "post.top.meridional_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnMeridional",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "meridional"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.monitor_dropdown",
+      "ref": "//TopPanel/**/##DropDownMonitor",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "monitor"
+      ]
+    },
+    {
+      "alias": "post.top.monitor_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnMonitor",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "monitor"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.multislice_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnMultiPlane",
+      "owner": "PostTests",
+      "tags": [
+        "multislice"
+      ]
+    },
+    {
+      "alias": "post.top.new",
+      "ref": "//TopPanel/**/##wholeChildBtnNew",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "file"
+      ],
+      "notes": "新建工程；TopPanel /**/ 跳过 Post##table_* / ##childGroup* 哈希。"
+    },
+    {
+      "alias": "post.top.open_files",
+      "ref": "//TopPanel/**/##wholeChildBtnOpen files",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "file"
+      ],
+      "notes": "Open files 主按钮；ImportModelPost 在 C++ 中仍用固定 childGroup 路径。"
+    },
+    {
+      "alias": "post.top.open_files_dropdown",
+      "ref": "//TopPanel/**/##DropDownOpen files",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "file"
+      ]
+    },
+    {
+      "alias": "post.top.particle_tracer_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnParticle Tracer",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
         "particle_tracer"
       ],
-      "notes": "Particle Tracer ParticleTable 最后一行第2列 ShowCylinder 控件。"
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.plot_over_line_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnPlot Over Line",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "plot_over_line"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.probe_data_generation_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnProbe Data Generation",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "probe_data"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.probe_sensor_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnProbe Sensor",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "probe"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.psd_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnPSD",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "psd"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.repetition_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnRepetition",
+      "owner": "PostTests",
+      "tags": [
+        "repetition",
+        "top"
+      ]
+    },
+    {
+      "alias": "post.top.reports_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnReports",
+      "owner": "PostTests",
+      "tags": [
+        "reports",
+        "top"
+      ]
+    },
+    {
+      "alias": "post.top.resample_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnResample",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "resample"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.rom_dropdown",
+      "ref": "//TopPanel/**/##DropDownROM",
+      "owner": "Postbug",
+      "tags": [
+        "post",
+        "top",
+        "rom"
+      ],
+      "notes": "ROM 分组下拉箭头；与 rom_panel 同组。"
+    },
+    {
+      "alias": "post.top.rom_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnROM",
+      "owner": "Postbug",
+      "tags": [
+        "rom"
+      ]
+    },
+    {
+      "alias": "post.top.save_scene",
+      "ref": "//TopPanel/**/##wholeChildBtnSave Scene",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "file"
+      ]
+    },
+    {
+      "alias": "post.top.save_scene_as",
+      "ref": "//TopPanel/**/##wholeChildBtnSave Scene As",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "file"
+      ]
+    },
+    {
+      "alias": "post.top.slice_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnSlice",
+      "owner": "PostTests",
+      "tags": [
+        "slice"
+      ]
+    },
+    {
+      "alias": "post.top.stream_line_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnStream Line",
+      "owner": "PostTests",
+      "tags": [
+        "streamline",
+        "top"
+      ]
+    },
+    {
+      "alias": "post.top.threshold_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnThreshold",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "threshold"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.transform_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnTransform",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "transform"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.top.warp_panel",
+      "ref": "//TopPanel/**/##wholeChildBtnWarp",
+      "owner": "PostTests",
+      "tags": [
+        "post",
+        "top",
+        "warp"
+      ],
+      "notes": "TopPanel /**/ skips Post##table_* / ##SmallSet* / ##childGroup* (varies with resolution/DPI)."
+    },
+    {
+      "alias": "post.transform.apply",
+      "ref": "//Transform##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.center_0",
+      "ref": "//Transform##CustomStatePlugin/**/Center/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ],
+      "notes": "Reflect 类型 Preview Setting 内 Center（单分量）。"
+    },
+    {
+      "alias": "post.transform.combo_plane",
+      "ref": "//Transform##CustomStatePlugin\\/##CustomGroupBox1_B0125C97/Plane",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ],
+      "notes": "Reflect 类型 Type Setting 内 Plane 下拉；proxy 枚举名如 X/Y/Z。"
+    },
+    {
+      "alias": "post.transform.combo_type",
+      "ref": "//Transform##CustomStatePlugin\\/##CustomGroupBox1_B0125C97/Transform",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.exit",
+      "ref": "//Transform##CustomStatePlugin/ContentTable/Exit",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.origin_0",
+      "ref": "//Transform##CustomStatePlugin/**/Origin/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.origin_1",
+      "ref": "//Transform##CustomStatePlugin/**/Origin/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.origin_2",
+      "ref": "//Transform##CustomStatePlugin/**/Origin/$$2/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.plugin_window",
+      "ref": "//Transform##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.rotate_0",
+      "ref": "//Transform##CustomStatePlugin/**/Rotate/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ],
+      "notes": "RotateAroundOriginTransform 类型 Preview Setting 内 Rotate。"
+    },
+    {
+      "alias": "post.transform.rotate_1",
+      "ref": "//Transform##CustomStatePlugin/**/Rotate/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.rotate_2",
+      "ref": "//Transform##CustomStatePlugin/**/Rotate/$$2/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.scale_0",
+      "ref": "//Transform##CustomStatePlugin/**/Scale/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.scale_1",
+      "ref": "//Transform##CustomStatePlugin/**/Scale/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.scale_2",
+      "ref": "//Transform##CustomStatePlugin/**/Scale/$$2/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.show_box",
+      "ref": "//Transform##CustomStatePlugin/**/Show Box",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.source_text",
+      "ref": "//Transform##CustomStatePlugin/##SourceText",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.translate_0",
+      "ref": "//Transform##CustomStatePlugin/**/Translate/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.translate_1",
+      "ref": "//Transform##CustomStatePlugin/**/Translate/$$1/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.transform.translate_2",
+      "ref": "//Transform##CustomStatePlugin/**/Translate/$$2/##v",
+      "owner": "PostTests",
+      "tags": [
+        "transform"
+      ]
+    },
+    {
+      "alias": "post.view_type.plot_view",
+      "ref": "//##Popup_a35da901/Plot View",
+      "owner": "PostTests",
+      "tags": [
+        "view",
+        "popup"
+      ]
+    },
+    {
+      "alias": "post.view_type.render_view",
+      "ref": "//##Popup_a35da901/Render View",
+      "owner": "PostTests",
+      "tags": [
+        "view",
+        "popup"
+      ]
+    },
+    {
+      "alias": "post.view_type.render_view_popup_alt",
+      "ref": "//##Popup_cec68140/Render View",
+      "owner": "Postbug",
+      "tags": [
+        "view",
+        "popup"
+      ],
+      "notes": "与 post.view_type.render_view 不同 Popup 实例哈希。"
+    },
+    {
+      "alias": "post.view_type.spreadsheet_view",
+      "ref": "/**/SpreadSheet View",
+      "owner": "PostTests",
+      "tags": [
+        "view",
+        "popup"
+      ]
+    },
+    {
+      "alias": "post.vtk_render_window",
+      "ref": "//##vtkRenderWindow",
+      "owner": "Postbug",
+      "tags": [
+        "vtk",
+        "window",
+        "capture"
+      ],
+      "notes": "VTK 渲染主窗口，可用于 capture_window（SpreadSheet 等无 RenderView1 的场景）。"
+    },
+    {
+      "alias": "post.vtk_render_window.vertical_tabs_add_scene",
+      "ref": "//##vtkRenderWindow/VerticalTabs/",
+      "owner": "PostTests",
+      "tags": [
+        "vtk",
+        "tabs",
+        "add_scene"
+      ]
+    },
+    {
+      "alias": "post.vtk_render_window.vertical_tabs_close",
+      "ref": "//##vtkRenderWindow/VerticalTabs/",
+      "owner": "Postbug",
+      "tags": [
+        "vtk",
+        "tabs",
+        "close"
+      ],
+      "notes": "VerticalTabs 条上的关闭控件（），用 item_click。勿与 tab_close(Scene #N) 混淆；p0_viewtype_1 用本 alias。"
+    },
+    {
+      "alias": "post.vtk_render_window.vertical_tabs_scene1_tab",
+      "ref": "//##vtkRenderWindow/VerticalTabs/Scene #1",
+      "owner": "Postbug",
+      "tags": [
+        "vtk",
+        "tabs"
+      ],
+      "notes": "配合 ui.tab_close 关闭指定 Scene 页签。"
+    },
+    {
+      "alias": "post.vtk_render_window.vertical_tabs_scene2_tab",
+      "ref": "//##vtkRenderWindow/VerticalTabs/Scene #2",
+      "owner": "PostTests",
+      "tags": [
+        "vtk",
+        "tabs"
+      ]
+    },
+    {
+      "alias": "post.vtk_render_window.view_type",
+      "ref": "//##vtkRenderWindow/VerticalTabs/",
+      "owner": "PostTests",
+      "tags": [
+        "vtk",
+        "tabs",
+        "view_type"
+      ]
+    },
+    {
+      "alias": "post.warp.apply",
+      "ref": "//Warp##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "warp",
+        "post"
+      ],
+      "notes": "Warp 面板底部的 Apply 按钮"
+    },
+    {
+      "alias": "post.warp.scale_factor",
+      "ref": "//Warp##CustomStatePlugin/**/Scale Factor/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "warp",
+        "post"
+      ],
+      "notes": "Warp 面板中的 Scale Factor 输入框。用 /**/ 跳过动态哈希，用 $$0 对齐 ImGui 行号规范。"
+    },
+    {
+      "alias": "post.xyplot.attr_check_0",
+      "ref": "//XYPlot##CustomStatePlugin/**/##AttrInfoTable/$$0/##CheckAttr",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot"
+      ],
+      "notes": "XYPlot 属性列表第 1 行 CheckAttr；ID Stack copy path 的 /0/ 在测试路径中写作 $$0。"
+    },
+    {
+      "alias": "post.xyplot.plot_setting",
+      "ref": "//XYPlot##CustomStatePlugin/ContentTable/Plot Setting",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot"
+      ],
+      "notes": "XYPlot ContentTable 内 Plot Setting 折叠区标题。"
+    },
+    {
+      "alias": "post.xyplot.plugin_close",
+      "ref": "//XYPlot##CustomStatePlugin/",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot",
+        "plugin"
+      ]
+    },
+    {
+      "alias": "post.xyplot.plugin_window",
+      "ref": "//XYPlot##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot",
+        "plugin"
+      ]
+    },
+    {
+      "alias": "post.xyplot.setting_table_r2_c1",
+      "ref": "//XYPlot##CustomStatePlugin/**/##SettingTable/$$2/$$1",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot"
+      ],
+      "notes": "XYPlot SettingTable 第 3 行第 2 列；ID Stack copy path 的 /2/1 在测试路径中写作 $$2/$$1。"
+    },
+    {
+      "alias": "view.camera.isometric_view",
+      "ref": "//TopPanel/**/##wholeChildBtnIsometric View",
+      "owner": "PostTests",
+      "tags": [
+        "view",
+        "camera"
+      ],
+      "notes": "View 页签 Camera/Isometric View；须先 select_view_ribbon_tab()。/**/ 跳过 View##table_* / ##childGroup* 哈希。"
     }
   ]
 }
