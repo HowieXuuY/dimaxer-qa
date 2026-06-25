@@ -219,6 +219,17 @@ def import_model_post(
     wait_alias(_SCENE_READY_MESH_ALIAS, _SCENE_READY_TIMEOUT_SEC)
 
 
+def import_csv_file(csv_path: str) -> None:
+    """Import a CSV via Post Open files, without using Solution Loader/Apply."""
+    path = Path(csv_path)
+    if not path.is_absolute():
+        path = Path(te.GetWorkSpacePath()) / "Model" / path
+
+    select_post_ribbon_tab()
+    item_click("post.top.open_files", 0, _IMGUI_TEST_OP_NO_FOCUS_WINDOW)
+    item_input_value("post.dialog.open_file_input", str(path))
+    wait_ui_idle()
+    
 def ribbon_hide_all_and_select_mesh(mesh_alias: str = _SCENE_READY_MESH_ALIAS) -> None:
     """Hide all visibility, wait for progress, then select mesh (tree ready)."""
     wait_progress_bars_gone()

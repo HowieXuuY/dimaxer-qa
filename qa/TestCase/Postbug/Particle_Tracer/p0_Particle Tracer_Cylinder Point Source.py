@@ -1,8 +1,7 @@
 import imgui_test_engine as te
-
 import dimaxer_ui as ui
-
 # https://project.feishu.cn/k112k5/issue/detail/7015679617?parentUrl=%2Fk112k5%2Fissue%2Fhomepage
+
 def particle_tracer_cylinder_point_source():
     ui.import_model_post("dmh1/19-0.000949999958.dmh.dat")
     ui.ribbon_hide_all_and_select_mesh()
