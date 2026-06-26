@@ -148,16 +148,6 @@
       "notes": "QuickAccess Show By Volume 按钮；使用 /**/ 跳过 ##childGroupShow By Volume_* 哈希。"
     },
     {
-      "alias": "post.solution_loader.apply",
-      "ref": "//Dimaxer Solution Loader/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "solution_loader",
-        "post"
-      ],
-      "notes": "Dimaxer Solution Loader 的 Apply 按钮，导入 .dmh / .dat 后点击确认。"
-    },
-    {
       "alias": "post.case_loader.apply",
       "ref": "//Dimaxer Case Loader/Apply",
       "owner": "Postbug",
@@ -166,16 +156,6 @@
         "post"
       ],
       "notes": "Dimaxer Case Loader 的 Apply 按钮，导入 .dmx 模型后点击确认。"
-    },
-    {
-      "alias": "post.cgns_loader.apply",
-      "ref": "//CGNS Input Parameters/Apply",
-      "owner": "Postbug",
-      "tags": [
-        "cgns_loader",
-        "post"
-      ],
-      "notes": "CGNS Input Parameters 的 Apply 按钮，导入 .cgns 后点击确认。"
     },
     {
       "alias": "post.dialog.open_button",
@@ -2364,6 +2344,15 @@
       ]
     },
     {
+      "alias": "post.multislice.input_number",
+      "ref": "//MultiPlane##CustomStatePlugin/**/Number/$$0/##v",
+      "owner": "PostTests",
+      "tags": [
+        "multislice"
+      ],
+      "notes": "MultiPlane Settings 内 Number 输入框；/**/ 跳过 MultiPlaneSettings_* hash。"
+    },
+    {
       "alias": "post.multislice.input_offset",
       "ref": "//MultiPlane##CustomStatePlugin\\/##OffSet_0B6CDFD8/OffSet/$$0/##v",
       "owner": "PostTests",
@@ -2548,6 +2537,15 @@
       ]
     },
     {
+      "alias": "post.slice.show_preview",
+      "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Show Preview",
+      "owner": "PostTests",
+      "tags": [
+        "slice"
+      ],
+      "notes": "Slice 面板 Plane Parameters 内 Show Preview。"
+    },
+    {
       "alias": "post.slice.triangulate",
       "ref": "//Slice##CustomStatePlugin\\/##Plane Parameters_68D3A284/Triangulate the slices",
       "owner": "PostTests",
@@ -2696,9 +2694,17 @@
         "streamline"
       ]
     },
-    {
+     {
       "alias": "post.ribbon.vis_slice1",
       "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_Slice1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon"
+      ]
+    },
+      {
+      "alias": "post.ribbon.vis_slice2",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox14_Slice1",
       "owner": "PostTests",
       "tags": [
         "ribbon"
@@ -3332,6 +3338,134 @@
       "notes": "配合 ui.tab_close 关闭指定 Scene 页签。"
     },
     {
+      "alias": "post.multiplane.show_preview",
+      "ref": "//MultiPlane##CustomStatePlugin\\/##MultiPlaneSettings_31FB93CD/Show Preview",
+      "owner": "PostTests",
+      "tags": [
+        "multiplane"
+      ],
+      "notes": "MultiPlane 面板 MultiPlaneSettings 内 Show Preview。"
+    },
+    {
+      "alias": "post.xyplot.plot_setting",
+      "ref": "//XYPlot##CustomStatePlugin/ContentTable/Plot Setting",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot"
+      ],
+      "notes": "XYPlot ContentTable 内 Plot Setting 折叠区标题。"
+    },
+    {
+      "alias": "post.xyplot.plugin_window",
+      "ref": "//XYPlot##CustomStatePlugin",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot",
+        "plugin"
+      ]
+    },
+    {
+      "alias": "post.xyplot.attr_check_0",
+      "ref": "//XYPlot##CustomStatePlugin/**/##AttrInfoTable/$$0/##CheckAttr",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot"
+      ],
+      "notes": "XYPlot 属性列表第 1 行 CheckAttr；ID Stack copy path 的 /0/ 在测试路径中写作 $$0。"
+    },
+    {
+      "alias": "post.xyplot.setting_table_r2_c1",
+      "ref": "//XYPlot##CustomStatePlugin/**/##SettingTable/$$2/$$1",
+      "owner": "PostTests",
+      "tags": [
+        "xyplot"
+      ],
+      "notes": "XYPlot SettingTable 第 3 行第 2 列；ID Stack copy path 的 /2/1 在测试路径中写作 $$2/$$1。"
+    },
+    {
+      "alias": "post.ribbon.mesh_table_fft1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_4_TableFFT1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "fft"
+      ],
+      "notes": "CSV/FFT 导入后的 TableFFT1 场景树选择按钮；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.ribbon.vis_table_fft1",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox4_TableFFT1",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "fft"
+      ],
+      "notes": "CSV/FFT 导入后的 TableFFT1 可见性勾选框；##VisibilityCheckbox 前序号随场景树变化，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.ribbon.mesh_select_fft_test_random_signal",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_fft_test_random_signal",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon",
+        "mesh",
+        "fft"
+      ],
+      "notes": "CSV 导入后的 fft_test_random_signal 节点；##SelectBtn 前序号随场景树变化，失败时用 ID Stack 更新。"
+    },
+    {
+      "alias": "post.fft.apply",
+      "ref": "//FFT##CustomStatePlugin/ContentTable/Apply",
+      "owner": "PostTests",
+      "tags": [
+        "fft"
+      ]
+    },
+    {
+      "alias": "post.popup.colormap_editor.table_button",
+      "ref": "//##Popup_e053fed4/##ColorMapEditerTable/$$0/$$1/...##button",
+      "owner": "Postbug",
+      "tags": [
+        "popup",
+        "colormap",
+        "button"
+      ],
+      "notes": "Popup 弹窗中 ColorMapEditerTable 表格第 0 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
+    },
+    {
+      "alias": "post.ribbonscene.meshes.visibility_checkbox_volume",
+      "ref": "//RibbonScene/**/##VisibilityCheckbox4_vol",
+      "owner": "Postbug",
+      "tags": [
+        "ribbonscene",
+        "meshes",
+        "volume",
+        "visibility"
+      ],
+      "notes": "RibbonScene 中 Meshes 面板的 Volume 可见性勾选框；定位路径为 Meshes_8900099D 下的 ##VisibilityCheckbox4_vol。"
+    },
+    {
+      "alias": "post.ribbonscene.scene_properties.table_button",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$2/$$1/...##button",
+      "owner": "Postbug",
+      "tags": [
+        "ribbonscene",
+        "scene_properties",
+        "button"
+      ],
+      "notes": "RibbonScene 中 Scene Properties 面板 table1 表格第 2 行第 1 列下的按钮；使用 ... 定位到内部 ##button。"
+    },
+    {
+      "alias": "post.quickaccess.show_by_volume",
+      "ref": "//QuickAccess/**/##wholeChildBtnShow By Volume",
+      "owner": "Postbug",
+      "tags": [
+        "quickaccess",
+        "volume"
+      ],
+      "notes": "QuickAccess Show By Volume 按钮；使用 /**/ 跳过 ##childGroupShow By Volume_* 哈希。"
+    },
+    {
       "alias": "post.ribbon.mesh_select_vki59_vol_k2_1",
       "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_5_VKI59_vol_K2_1",
       "owner": "Postbug",
@@ -3507,6 +3641,17 @@
       "notes": "Particle Tracer ParticleTable 最后一行第2列 ShowCylinder 控件。"
     },
     {
+      "alias": "post.ribbon.mesh_select_vki59",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_3_VKI59_vol_K2",
+      "owner": "Postbug",
+      "tags": [
+        "ribbon",
+        "mesh",
+        "vtu"
+      ],
+      "notes": "VKI59 VTU 导入后的场景树网格节点；##SelectBtn 序号随树变化，失败时用 ID Stack 更新。"
+    },
+    {
       "alias": "post.ribbon.vis_particle_tracer1",
       "ref": "//RibbonScene\\/Meshes_8900099D/##VisibilityCheckbox9_ParticleTracer1",
       "owner": "Postbug",
@@ -3554,6 +3699,14 @@
         "particle_tracer"
       ],
       "notes": "Particle Tracer ParticleTable 最后一行第1列 Show Line 控件。"
+    },
+        {
+      "alias": "post.ribbon.mesh_slice2",
+      "ref": "//RibbonScene\\/Meshes_8900099D/##SelectBtn_10_Slice2",
+      "owner": "PostTests",
+      "tags": [
+        "ribbon"
+      ]
     }
   ]
 }
