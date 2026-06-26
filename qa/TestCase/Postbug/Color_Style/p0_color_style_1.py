@@ -11,6 +11,9 @@ def p0_color_style_1():
     # Color Map 选 Pressure
     ui.combo_click("post.scene_properties.value_cell", "Pressure")
 
+    # 点击 Auto Range
+    ui.item_click("post.scene_properties.auto_range_btn", 0, 8)
+
     # 打开 Color Style 下拉框
     ui.item_click("post.scene_properties.color_style", 0, 8)
 

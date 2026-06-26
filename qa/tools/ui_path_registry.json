@@ -3177,6 +3177,16 @@
       ],
       "notes": "Scene Properties 表第 3 行 Colormap Range Auto 按钮。"
     },
+        {
+      "alias": "post.scene_properties.auto_range_btn",
+      "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/Auto",
+      "owner": "Postbug",
+      "tags": [
+        "colormap",
+        "properties"
+      ],
+      "notes": "Scene Properties 表 Value Range 行的 Auto 按钮（精确路径）。"
+    },
     {
       "alias": "post.scene_properties.value_range_min",
       "ref": "//RibbonScene\\/##ScenePropertiesProperties_8AD66140/##table1/$$3/$$1/##Min",
